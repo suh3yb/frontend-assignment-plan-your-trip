@@ -6,7 +6,7 @@ Thanks for applying! This assignment allows us to assess your Frontend skills, s
 
 You will build a product searcher, where users will select a Country, City and Date, and then a list of products will be shown based on those search options.
 
-The app is responsive to the screen width. For simplicity's sake, we'll focus on 2 sizes and refer to them as *mobile* and *desktop*.
+The app is responsive to the screen width. For simplicity's sake, we'll focus on 2 sizes and refer to them as _mobile_ and _desktop_.
 
 ### Design specification
 
@@ -18,27 +18,27 @@ There are essentially 3 main sections in the app:
 
 ### 1) Country and City filters.
 
-* On mobile, the filters should be on top of each other. On desktop, they should be next to each other.
-* Initially, neither filter will have a selected value. The City filter should be disabled, and only become enabled after a Country is selected.
-* The Country filter will list all possible Countries, after selecting a Country, the City filter will list only the Cities corresponding to the selected Country.
-* The data for the Countries and Cities is provided by a JSON API. [See details](#apis) below.
+- On mobile, the filters should be on top of each other. On desktop, they should be next to each other.
+- Initially, neither filter will have a selected value. The City filter should be disabled, and only become enabled after a Country is selected.
+- The Country filter will list all possible Countries, after selecting a Country, the City filter will list only the Cities corresponding to the selected Country.
+- The data for the Countries and Cities is provided by a JSON API. [See details](#apis) below.
 
 ### 2) Date Picker
 
-* On mobile, at least the first 4 Dates should be shown. As the viewport gets wider, then up to 8 Dates should be shown.
-* Initially, all Dates will be disabled. Only after selecting a City the Dates will become enabled.
-* The data for the avaiable Dates is provided by a JSON API. [See API details](#apis) below.
+- On mobile, at least the first 4 Dates should be shown. As the viewport gets wider, then up to 8 Dates should be shown.
+- Initially, all Dates will be disabled. Only after selecting a City the Dates will become enabled.
+- The data for the avaiable Dates is provided by a JSON API. [See API details](#apis) below.
 
 ### 3) Search Results / List of Products / Product Card
 
-* After selecting a Date, the app should make a request to the product search JSON API (provided, [see API details](#apis) below). The response will be a list of products, which data will be used to render the list of results.
-* Each product is visually represented by a Product Card. The card has a different layout between mobile and desktop.
-* Each card shows: title, short description (desktop-only), image, and price.
-* Some products include a *discount percentage*. In this case, a *pre-discount price* should be shown in the card. This *pre-discount* is **calculated** based on the *price* and the *discount percentage*.
-* The product image on the card has a different aspect ratio between mobile and desktop. The images should be lazy-loaded.
-* Clicking the card should navigate users to the Tiqets.com page for that product.
-* On mobile, the cards should be shown in a single column - in other words, on top of each other. On desktop, they should be shown in 2 columns, as shown in the [Design specification](#design-specification).
-* For the layout of this list of products, **CSS Grid** should be used.
+- After selecting a Date, the app should make a request to the product search JSON API (provided, [see API details](#apis) below). The response will be a list of products, which data will be used to render the list of results.
+- Each product is visually represented by a Product Card. The card has a different layout between mobile and desktop.
+- Each card shows: title, short description (desktop-only), image, and price.
+- Some products include a _discount percentage_. In this case, a _pre-discount price_ should be shown in the card. This _pre-discount_ is **calculated** based on the _price_ and the _discount percentage_.
+- The product image on the card has a different aspect ratio between mobile and desktop. The images should be lazy-loaded.
+- Clicking the card should navigate users to the Tiqets.com page for that product.
+- On mobile, the cards should be shown in a single column - in other words, on top of each other. On desktop, they should be shown in 2 columns, as shown in the [Design specification](#design-specification).
+- For the layout of this list of products, **CSS Grid** should be used.
 
 ## APIs
 
@@ -92,8 +92,8 @@ http://localhost:3001/products?date=2021-07-31&city=66154
 
 This endpoint returns a dynamic list of products, based on the URL parameters passed.
 
-* `city` - the ID of a city. Number. Required. Example: `city=321`.
-* `date` - date, formatted in ISO. String. Required. Example: `date=2021-12-25`.
+- `city` - the ID of a city. Number. Required. Example: `city=321`.
+- `date` - date, formatted in ISO. String. Required. Example: `date=2021-12-25`.
 
 ```
 [
@@ -120,17 +120,24 @@ This endpoint returns a dynamic list of products, based on the URL parameters pa
 
 Here's a few things that we generally expect in the delivery:
 
-* A full implementation of the visual design and the functionality presented above.
-* As few external or 3rd-party libraries as possible.
-* Use of semantic, accessible markup.
-* All scripting must be written in TypeScript.
-* For styling, you're welcome to use any tool you prefer.
+- A full implementation of the visual design and the functionality presented above.
+- As few external or 3rd-party libraries as possible.
+- Use of semantic, accessible markup.
+- All scripting must be written in TypeScript.
+- For styling, you're welcome to use any tool you prefer.
 
 ## General information
 
-* The app was bootstrapped with Create React App.
-* In this repo we're using npm, and not yarn.
-* It should work in Node v12 or above.
+- The app was bootstrapped with Create React App.
+- In this repo we're using npm, and not yarn.
+- It should work in Node v12 or above.
+
+## Development
+
+In order to get started working:
+
+1. Install all necessary dependencies: `npm install`.
+2. Run `npm run start` to start the API server and the react app in development mode. That's it!
 
 ## Delivery
 
@@ -140,3 +147,4 @@ Once you finish the assignment and you're ready to send your code to us, you can
 2. Publish your code into a GitHub repository and send us the link.
    If you prefer to keep it private, you can add the **`tiqets-fe`** user as a project collaborator,
    so we can access it.
+3. We should be able to run `npm install && npm run build` and get the app bundled for production use.
