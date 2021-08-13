@@ -87,12 +87,12 @@ This endpoint returns the fixed list of Dates that should be shown, all in a sin
 ### Product Search
 
 ```
-http://localhost:3001/products?date=2021-07-31&city=66154
+http://localhost:3001/products?date=2021-07-31&city_id=66154
 ```
 
 This endpoint returns a dynamic list of products, based on the URL parameters passed.
 
-- `city` - the ID of a city. Number. Required. Example: `city=321`.
+- `city_id` - the ID of a city. Number. Required. Example: `city_id=321`.
 - `date` - date, formatted in ISO. String. Required. Example: `date=2021-12-25`.
 
 ```
