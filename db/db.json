@@ -1,217 +1,65 @@
 {
   "locations": {
     "United States": [
-      [
-        260932,
-        "New York"
-      ],
-      [
-        79889,
-        "Orlando"
-      ],
-      [
-        82073,
-        "Las Vegas"
-      ],
-      [
-        79751,
-        "Washington D-c"
-      ],
-      [
-        1772,
-        "San Francisco"
-      ],
-      [
-        80874,
-        "Boston"
-      ],
-      [
-        79946,
-        "Tampa"
-      ],
-      [
-        80816,
-        "Chicago"
-      ],
-      [
-        80026,
-        "Savannah"
-      ],
-      [
-        79868,
-        "Miami"
-      ],
-      [
-        122690,
-        "Saint Augustine"
-      ],
-      [
-        79844,
-        "Key West"
-      ]
+      [260932, "New York"],
+      [79889, "Orlando"],
+      [82073, "Las Vegas"],
+      [79751, "Washington D-c"],
+      [1772, "San Francisco"],
+      [80874, "Boston"],
+      [79946, "Tampa"],
+      [80816, "Chicago"],
+      [80026, "Savannah"],
+      [79868, "Miami"],
+      [122690, "Saint Augustine"],
+      [79844, "Key West"]
     ],
     "France": [
-      [
-        66746,
-        "Paris"
-      ],
-      [
-        66735,
-        "Poitiers"
-      ],
-      [
-        260936,
-        "Le Mont-saint-michel"
-      ],
-      [
-        66615,
-        "Tours"
-      ],
-      [
-        67073,
-        "Carcassonne"
-      ],
-      [
-        66770,
-        "Nice"
-      ],
-      [
-        66838,
-        "Lyon"
-      ],
-      [
-        66788,
-        "Montpellier"
-      ],
-      [
-        66619,
-        "Toulouse"
-      ]
+      [66746, "Paris"],
+      [66735, "Poitiers"],
+      [260936, "Le Mont-saint-michel"],
+      [66615, "Tours"],
+      [67073, "Carcassonne"],
+      [66770, "Nice"],
+      [66838, "Lyon"],
+      [66788, "Montpellier"],
+      [66619, "Toulouse"]
     ],
     "Spain": [
-      [
-        66154,
-        "Tarragona"
-      ],
-      [
-        66254,
-        "Madrid"
-      ],
-      [
-        66825,
-        "Marseille"
-      ],
-      [
-        66342,
-        "Barcelona"
-      ],
-      [
-        461,
-        "Tenerife"
-      ],
-      [
-        32,
-        "Malaga"
-      ]
+      [66154, "Tarragona"],
+      [66254, "Madrid"],
+      [66825, "Marseille"],
+      [66342, "Barcelona"],
+      [461, "Tenerife"],
+      [32, "Malaga"]
     ],
     "Italy": [
-      [
-        71506,
-        "Verona"
-      ],
-      [
-        71631,
-        "Rome"
-      ],
-      [
-        71720,
-        "Naples"
-      ],
-      [
-        558,
-        "Sicily"
-      ],
-      [
-        71634,
-        "Rimini"
-      ],
-      [
-        71510,
-        "Venice"
-      ]
+      [71506, "Verona"],
+      [71631, "Rome"],
+      [71720, "Naples"],
+      [558, "Sicily"],
+      [71634, "Rimini"],
+      [71510, "Venice"]
     ],
-    "Denmark": [
-      [
-        113,
-        "Copenhagen"
-      ]
-    ],
-    "Sweden": [
-      [
-        1638,
-        "Stockholm"
-      ]
-    ],
+    "Denmark": [[113, "Copenhagen"]],
+    "Sweden": [[1638, "Stockholm"]],
     "UAE": [
-      [
-        60005,
-        "Dubai"
-      ],
-      [
-        60013,
-        "Abu Dhabi"
-      ]
+      [60005, "Dubai"],
+      [60013, "Abu Dhabi"]
     ],
-    "Singapore": [
-      [
-        78125,
-        "Singapore"
-      ]
-    ],
-    "Romania": [
-      [
-        115866,
-        "Bran"
-      ]
-    ],
+    "Singapore": [[78125, "Singapore"]],
+    "Romania": [[115866, "Bran"]],
     "Netherlands": [
-      [
-        75061,
-        "Amsterdam"
-      ],
-      [
-        74866,
-        "Utrecht"
-      ]
+      [75061, "Amsterdam"],
+      [74866, "Utrecht"]
     ],
     "United Kingdom": [
-      [
-        21,
-        "Edinburgh"
-      ],
-      [
-        67204,
-        "York"
-      ]
+      [21, "Edinburgh"],
+      [67204, "York"]
     ],
-    "Czech Republic": [
-      [
-        64187,
-        "Kutna Hora"
-      ]
-    ],
-    "Austria": [
-      [
-        60335,
-        "Vienna"
-      ]
-    ],
-    "Maxico": [
-      [
-        24,
-        "Cancun"
-      ]
-    ]
+    "Czech Republic": [[64187, "Kutna Hora"]],
+    "Austria": [[60335, "Vienna"]],
+    "Mexico": [[24, "Cancun"]]
   },
   "available_dates": [
     "2021-07-30",
@@ -249,9 +97,7 @@
       "discount_percentage": 15,
       "summary": "Take in the best views in the Western Hemisphere whenever you like! This priority pass lets you skip the lines and fast-track through the security checks, getting you to the top of the world's 6th tallest building in a jiffy. Whether you want to start your day here or watch a romantic sunset, now you can take in those 50-mile views at the time of your choosing!",
       "city_id": 260932,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/disneyland-paris-skip-the-line-special-offer-p975464",
@@ -261,9 +107,7 @@
       "price": 51,
       "summary": "Skip the lines outside Disneyland Paris and get straight to moseying around the Magic Kingdom, soaking up the atmosphere and joy. Get the 2-park option and add Walt Disney Studios Park to your full day of unforgettable family fun!",
       "city_id": 66746,
-      "available_dates": [
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/disneyland-paris-skip-the-line-p975463",
@@ -306,10 +150,7 @@
       "price": 33,
       "summary": "On the south-eastern banks of the gorgeous Lake Garda lies Gardaland, Italy’s largest amusement park, right between Milan and Venice. Ride one of the seven roller coasters, go on a high-voltage 4D adventure, watch a 'Gardaland on Broadway' show, and more!",
       "city_id": 71506,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/copenhagen-c113/amusement-park-tivoli-gardens-skip-the-line-p974108",
@@ -349,9 +190,7 @@
       "price": 34.09,
       "summary": "Treat yourself - and those you're with - to something truly special. Shoot up to the 124th floor of the Burj Khalifa. From these dizzying heights, you'll enjoy some spectacular views of Dubai as you literally live the high life. Plus, get access to the slightly-higher 125th floor. With panoramic views from the world's highest building, this is a true bucket list experience.",
       "city_id": 60005,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/rome-c71631/colosseum-skip-the-line-arena-floor-access-roman-forum-p975451",
@@ -361,10 +200,7 @@
       "price": 30,
       "summary": "Sink your sword into the very best of Rome with this triple-bill of unmissable culture! Get a gladiator's-eye view of the iconic arena and explore areas that are off-limits to the general public. Then get to the heart of ancient Rome at the Forum, and see where it all began at the Palatine Hill. Strap on your sandals and step into history!",
       "city_id": 71631,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/dubai-c60005/burj-khalifa-124th-125th-148th-floor-skip-the-line-p974247",
@@ -389,10 +225,7 @@
       "price": 20,
       "summary": "The eruption of Mt. Vesuvius in 79 C.E. was a paradoxical thing. It was truly cataclysmic – it wiped out the entire populations of nearby towns – but it also yielded to history one of the most extensive and intact ruins of an ancient city. That settlement was Pompeii. This is one of Italy’s most visited sites and you can Skip The Line with this ticket.",
       "city_id": 71720,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/rome-c71631/colosseum-roman-forum-palatine-hill-last-minute-tickets-p975871",
@@ -402,11 +235,7 @@
       "price": 26,
       "summary": "Short on time in Rome? No worries, this cool combo ticket gets you through the priority entrance to the best bits. Get escorted into the Colosseum by a Tiqets representative and explore both the 2nd and 3rd floors. Afterward see the Roman Forum and Palatine Hill. Hail Caesar!",
       "city_id": 71631,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/new-york-c260932/9-11-memorial-museum-p974440",
@@ -431,9 +260,7 @@
       "price": 61.71,
       "summary": "Pay your respects to the fallen heroes and innocent lives that perished in the World Trade Center attacks on September 11th, 2001. Visit the profoundly moving Ground Zero Memorial at the foot of One World Trade Center, then ascend to the top of New York's towering skyline at the One World Observatory and look out over the iconic Manhattan skyline.",
       "city_id": 260932,
-      "available_dates": [
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/new-york-c260932/empire-state-building-general-admission-p974092",
@@ -458,11 +285,7 @@
       "price": 18,
       "summary": "With hundreds of acres of magnificent gardens and ornaments everywhere you look, this 17th-century French castle is a masterclass in swankiness. Get the royal treatment yourself with this ticket by skipping the purchase line. While the splendor amazes your eyes, the included audio guide will fill your head with context.",
       "city_id": 66746,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/madrid-c66254/prado-museum-p974035",
@@ -472,9 +295,7 @@
       "price": 15,
       "summary": "Based on the former Spanish Royal Collection, the Prado is a beautiful old castle with more than a thousand fascinating works on display. From Spanish masters like Velázquez and Goya, to works by Titian, Rembrandt, El Greco, Rubens and more, this is a must-see for the art lover. And with this nifty ticket, both the Permanent and Temporary Exhibitions are yours to explore to your _art's_ content!",
       "city_id": 66254,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/singapore-c78125/universal-studios-singaporeTM-p975163",
@@ -484,9 +305,7 @@
       "price": 51.3,
       "summary": "Clapper-boards at the ready! Universal Studios Singapore™ is home to dozens of movie-themed rides and attractions that'll have you screaming for more!",
       "city_id": 78125,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/orlando-c79889/seaworld-orlando-p975183",
@@ -496,9 +315,7 @@
       "price": 83.17,
       "summary": "Make the most of your time at SeaWorld Orlando by combining up-close animal interactions with thrilling rollercoasters and one-of-a-kind attractions. The unmissable _MAKO_ is Orlando’s tallest, fastest and longest coaster, and if you're into futurism, hit up the all-new _Kraken Unleashed Virtual Reality (VR)_ coaster. And nobody visits SeaWorld without witnessing the power and grace of the famous orcas!",
       "city_id": 79889,
-      "available_dates": [
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/catacombs-of-paris-skip-the-line-audio-guide-p975456",
@@ -508,9 +325,7 @@
       "price": 29,
       "summary": "Take an underground tour of Paris's grisly mass graveyard, where the bones of a staggering _six million_ people are on macabre display. Wandering these corridors is a fantastically eerie experience, and you'll learn all about life (and death) in 18th-century Paris with the multilingual audio guide. Discover the dark side of Paris!",
       "city_id": 66746,
-      "available_dates": [
-        "2021-07-30"
-      ]
+      "available_dates": ["2021-07-30"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/eiffel-tower-summit-guided-visit-p975507",
@@ -520,9 +335,7 @@
       "price": 69.9,
       "summary": "Skip the line to the top of the Eiffel Tower, Paris's number one landmark. Take an insider's tour of the summit with a guide, peek inside Gustave Eiffel's apartment and get unparalleled views of Parisian landmarks like Montmartre, the Louvre Museum and more.",
       "city_id": 66746,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/las-vegas-c82073/the-linq-high-roller-skip-the-line-p974981",
@@ -532,9 +345,7 @@
       "price": 17.89,
       "summary": "The biggest Ferris wheel in the world is in Vegas because... _of course_ it is. The LINQ High Roller is one of the simplest and most fun experiences in the city. Skip the long waiting lines and hop into a cabin, rotate 360° up and around, as you look out upon the lights and action of Sin City. And afterward: get straight back into the action!",
       "city_id": 82073,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/washington-d-c-c79751/newseum-skip-the-line-p976107",
@@ -544,9 +355,7 @@
       "price": 20.06,
       "summary": "Refresh your appreciation for free expression and the pursuit of truth with an immersive journey through Newseum. Trace the history of the news media across seven floors of touchscreens, film and video, computer games, interactive kiosks, and hands-on multimedia exhibits.",
       "city_id": 79751,
-      "available_dates": [
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/marseille-c66825/mucem-museum-of-european-mediterranean-civilizations-fast-track-p976518",
@@ -556,10 +365,7 @@
       "price": 9.5,
       "summary": "You could go to Mucem in Marseilles twice and have two entirely different experiences. The stunning museum of European and Mediterranean Civilizations is home to one of the most extensive collections of Mediterranean art and culture anywhere in the world. See early illustrations, photographs, paintings, sculptures, audio recordings and even exhibitions on early European sorcery and witchcraft.",
       "city_id": 66825,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/san-francisco-c1772/exploratorium-skip-the-line-p976930",
@@ -569,10 +375,7 @@
       "price": 26.78,
       "summary": "San Francisco's Exploratorium is more than a museum - it's an educational experience the whole family can enjoy! Step into a world of science, art, and human perception with over 650 hands-on exhibits designed to boggle the mind.",
       "city_id": 1772,
-      "available_dates": [
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/orlando-c79889/legoland-florida-resort-fast-track-p977045",
@@ -597,11 +400,7 @@
       "price": 40,
       "summary": "Experience the fantastical world of Futuroscope, one of the world's best theme parks, and discover over 25 original experiences from 3D and 4D rides to the virtual reality 5D and many unusual venues for all ages!",
       "city_id": 66735,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/bran-c115866/haunted-castle-skip-the-line-p975664",
@@ -611,10 +410,7 @@
       "price": 7.5,
       "summary": "It's Halloween all year long at the Haunted Castle, at the base of creepy Bran Castle. Wander through 12 rooms packed with frights by the likes of Dr. Frankenstein, skeletons, ghosts, ghouls and, of course, Count Dracula.",
       "city_id": 115866,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/boston-c80874/boston-harbor-whale-watch-cruise-p975754",
@@ -624,9 +420,7 @@
       "price": 49.19,
       "summary": "Get ready for a whale of a time with Boston Harbor Whale Watch Cruise. Join an expert marine biologist on a top-notch catamaran and whoosh across the waves of Boston Harbor towards Stellwagen Bank Marine Sanctuary. See finbacks, minkes, pilot whales and more!",
       "city_id": 80874,
-      "available_dates": [
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/tampa-c79946/clearwater-marine-aquarium-general-admission-p977413",
@@ -636,11 +430,7 @@
       "price": 24.1,
       "summary": "How many celebrity dolphins have you met? Get ready to add a name to that list, with a ticket to Clearwater Marine Aquarium. A rescue center for marine wildlife, Clearwater Marine Aquarium is home to Winter, the prosthetic-tailed dolphin who played herself in the hit Hollywood movie _Dolphin Tale_. Get up close to Winter and her friends, and learn about some amazing success stories of animal rescue, rehabilitation, and release.",
       "city_id": 79946,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/san-francisco-c1772/alcatraz-audio-guide-p977207",
@@ -681,11 +471,7 @@
       "price": 21.46,
       "summary": "Take in the sights exactly like early American immigrants would have - without all the, you know... stress of moving house (and country). This experience takes you on a boat cruise to Liberty and Ellis Island - including visits to Liberty Island and access to the Ellis Island National Immigration Museum. Think of this as a profoundly moving meditation on the nature of American ideals... plus a boat ride!",
       "city_id": 260932,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/barcelona-c66342/camp-nou-experience-p974062",
@@ -695,10 +481,7 @@
       "price": 26,
       "summary": "The Camp Nou Experience is a celebration of the hardware, stadium atmosphere, and ins-and-outs of FC Barcelona, one of the best football teams on the planet. But it's even more than that: it's a celebration of the very spirit of football. Tour Camp Nou, one of the most storied stadiums in football, and you'll understand why Barça's motto is \"More than just a club\".",
       "city_id": 66342,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/amsterdam-c75061/rijksmuseum-all-the-rembrandts-exhibition-p977147",
@@ -708,9 +491,7 @@
       "price": 20,
       "summary": "Marking the 350th anniversary of Rembrandt's death, the Rijksmuseum is celebrating the Dutch master with a truly special exhibition. _All the Rembrandts_ brings together the Rijksmuseum's entire collection of Rembrandt's works (the largest in the world), presenting them all together for the first time ever. It's a rare opportunity to lift the veil on one of the most important artists in history and discover the moving stories that live on in his brushstrokes.",
       "city_id": 75061,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/chicago-c80816/skydeck-chicago-p974496",
@@ -720,11 +501,7 @@
       "price": 19.67,
       "summary": "See the Windy City from the very best vantage point: 103 floors above the ground! This Windy City icon has recently been redone from the ground up, and not only does it offer some of the best views of the city and its landmarks, it also features museum-quality exhibits and interactive technology that celebrate Chicago's history. Get up (nearly) to the top of the second-tallest building in the US and look 400 meters straight down to the ground from _The Ledge_.",
       "city_id": 80816,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/dubai-c60005/legoland-dubai-p975378",
@@ -734,10 +511,7 @@
       "price": 45.77,
       "summary": "Ride rollercoasters, get wet on a water ride and become a dragon's apprentice all in one day at LEGOLAND® Dubai - another of the desert city's incredibly impressive family attractions. Be wowed by indoor and outdoor attractions, six themed lands, 15,000 LEGO® models and over 60 million LEGO® bricks!",
       "city_id": 60005,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/savannah-c80026/ghosts-gravestones-savannah-p976079",
@@ -747,11 +521,7 @@
       "price": 29.51,
       "summary": "Georgia is famous for its peaches and peanuts, but to anyone who dabbles in the paranormal, it's also a well-known hotbed for ghostly spirits and ethereal apparitions. Pluck up your courage and set off to explore America's most haunted city with a Ghosts & Gravestones tour of Savannah.",
       "city_id": 80026,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/new-york-c260932/circle-line-landmark-sightseeing-cruise-p974213",
@@ -761,11 +531,7 @@
       "price": 33.09,
       "summary": "In your regular life, you may not be a seafarer, but in New York, anything is possible. This is a ridiculously scenic 90-minute round trip tour of New York's famous sites, including the Statue of Liberty, the Empire State Building, and, everywhere you look: that famous Manhattan skyline!",
       "city_id": 260932,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/le-mont-saint-michel-c260936/abbaye-du-mont-saint-michel-priority-entrance-p974575",
@@ -775,10 +541,7 @@
       "price": 10,
       "summary": "It looks straight out of a fantasy film - as if dragons might swoop down as you enter. But you haven't stepped into a parallel universe - you've just discovered the Abbaye du Mont Saint-Michel. This astounding World Heritage Site lies just off the rocky coast of Normandy. It's a medieval must-see! Explore 20 rooms, stunning gardens, and get panoramic views of the sea and sky.",
       "city_id": 260936,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/barcelona-c66342/sagrada-familia-fast-track-p918256",
@@ -788,9 +551,7 @@
       "price": 17,
       "summary": "Make seeing the Sagrada Familia the first thing you do in Barcelona! The lines can be long, so join the many people who visited Barcelona's top attraction with our fast-track tickets and save yourself time and money.",
       "city_id": 66342,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/tours-c66615/zooparc-de-beauval-p974727",
@@ -800,9 +561,7 @@
       "price": 28,
       "summary": "Spot koalas, kangaroos, manatees, giant pandas and over 6,000 other animals in France's number one zoo. With excellent shows and entertainment for the kids - plus a new baby panda so cute you'll want to kidnap it - this dose of animal magic is a guaranteed awesome family day out.",
       "city_id": 66615,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/las-vegas-c82073/las-vegas-monorail-p974777",
@@ -812,11 +571,7 @@
       "price": 11.63,
       "summary": "Woken up in Vegas with no idea what happened or where you are? Get anywhere fast on the elevated monorail along the world famous Las Vegas Strip! Choose from a 1, 2, 3, or 4-day pass.",
       "city_id": 82073,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/barcelona-c66342/barcelona-card-p975758",
@@ -826,9 +581,7 @@
       "price": 45,
       "summary": "The Barcelona Card is your key to the Catalan capital. With free public transport, skip-the-line museum entrance, and dozens of discounts for attractions around the city sorted in advance. All that's left is for you to decide in what order the magic happens.",
       "city_id": 66342,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/miami-c79868/zoo-miami-skip-the-line-p974513",
@@ -853,11 +606,7 @@
       "price": 15.87,
       "summary": "This tour is so creepy, it's for adults only! Learn about the ghosts and ghouls of Edinburgh's gripping past with this underground adventure. Expect torture, murder, treason, hauntings and more on the scariest walking tour in Scotland!",
       "city_id": 21,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/arc-de-triomphe-skip-the-line-rooftop-access-p974146",
@@ -867,10 +616,7 @@
       "price": 12,
       "summary": "The Arc de Triomphe is a Neoclassical take on the ancient Roman triumphal arch style. 50 m tall, the view from the platform atop the arch is well worth the hike. You'll see all of the dozen Parisian avenues radiating out from it into the City of Light. Paris is one of the most fascinating places in the world, and you're at the center.",
       "city_id": 66746,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/kutna-hora-c64187/kutna-hora-bone-chapel-tour-p974185",
@@ -880,10 +626,7 @@
       "price": 32,
       "summary": "One of the most popular tourist sites in the Czech Republic, this six hour round-trip guided tour takes you through lush Bohemian countryside, and to the once-mighty town of Kutná Hora. The gruesome highlight is undoubtedly the chapel at Kutná Hora, which is made of human bones. Yup, a chapel. Made of human bones.",
       "city_id": 64187,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/opera-garnier-self-guided-visit-p974598",
@@ -893,10 +636,7 @@
       "price": 14,
       "summary": "Opéra Garnier is a Parisian icon. To those in the know, this opulent opera and ballet house is as much a part of the cultural fabric of this city as Notre Dame Cathedral, the Louvre, or the Tour Eiffel. And to everyone around the world, it's known as the setting for _The Phantom of the Opera_. Perhaps the most beautiful opera house in the world, Opéra Garnier is packed with history. Take a self-guided tour of this remarkable home of the music (of the niiiight).",
       "city_id": 66746,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/las-vegas-c82073/the-mob-museum-p974818",
@@ -906,9 +646,7 @@
       "price": 21.91,
       "summary": "Get a different view of American history at the Mob Museum, The National Museum of Organized Crime and Law Enforcement. Take an interactive journey and hear about the birth of the mob, through to its battles with the law via exciting, multi-sensory exhibits!",
       "city_id": 82073,
-      "available_dates": [
-        "2021-07-30"
-      ]
+      "available_dates": ["2021-07-30"]
     },
     {
       "product_url": "https://www.tiqets.com/en/new-york-c260932/empire-state-building-day-and-night-entry-p974919",
@@ -918,10 +656,7 @@
       "price": 46.14,
       "summary": "The Big Apple is always buzzing, but if you can't decide between day or night views from the famous Empire State Building, you can visit twice in one day with this special ticket. Skip the lines at the ticket counter and zoom right up to the observatory in sunlight - and then by moonlight!",
       "city_id": 260932,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/new-york-c260932/the-museum-of-modern-art-skip-the-line-p974081",
@@ -931,9 +666,7 @@
       "price": 22.36,
       "summary": "Art is cool. New York is cool. Checking out art in the Museum of Modern Art? Now *you’re* cool. MoMA is an art lover’s paradise, a place to soak up art in an elevated atmosphere. And if you’re not yet a lover of modern and contemporary art, this museum - filled with Van Goghs, Warhols and Picassos - might turn you into one.",
       "city_id": 260932,
-      "available_dates": [
-        "2021-07-30"
-      ]
+      "available_dates": ["2021-07-30"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/palace-of-versailles-access-all-areas-audio-guide-p974127",
@@ -959,10 +692,7 @@
       "price": 14,
       "summary": "The Musée Picasso in Paris has an incredible collection of over five thousand works of art. Dedicated to one of the most well-known artists of the 20th century, this spectacular 17th-century _hôtel particulier_ is filled to the brim with iconic modern masterpieces by Pablo Picasso - as well as works that he collected. This ticket gives you priority entrance to the legacy of an artistic genius. Pop into Picasso.",
       "city_id": 66746,
-      "available_dates": [
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/dubai-c60005/burj-khalifa-124th-125th-floor-dubai-aquarium-p974503",
@@ -972,10 +702,7 @@
       "price": 53.81,
       "summary": "Dubai is known as the 'City of Superlatives' (what else would you expect from a place where the police drive Lamborghinis?). That unsurpassed sense of grandiosity is on its finest display in Dubai Mall - the largest mall in the world, attached to the Burj Khalifa, the world's tallest building. This combo ticket lets you soak up that impressiveness with access to the 124th floor of the Burj, and a visit to the shark and crocodile-filled Dubai Aquarium.",
       "city_id": 60005,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/san-francisco-c1772/legion-of-honor-p974649",
@@ -986,9 +713,7 @@
       "discount_percentage": 50,
       "summary": "The Legion of Honor sounds like an assembly of superheroes, but it's not. However, it is an unrivaled collection of art. See over 124,000 works of art spanning 4,000 years, from European sculpture and paintings to ancient art from the Med and Near East. Its most famous piece is Rodin's _The Thinker_, but there's plenty of other highlights by Degas, Monet, Rubens and more.",
       "city_id": 1772,
-      "available_dates": [
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/abu-dhabi-c60013/louvre-abu-dhabi-skip-the-line-p975300",
@@ -998,10 +723,7 @@
       "price": 15.34,
       "summary": "The Louvre Abu Dhabi is a 'floating city' of culture, packed to the immaculately designed gills with some of the greatest art in the world. See originals by the likes of Da Vinci, Matisse, Mondrian, Monet and more in a mind-boggling 64,000m2 museum designed by legendary architect Jean Nouvel. It's east meets west in a groundbreaking gallery that's as much of a work of art as the masterpieces it contains.",
       "city_id": 60013,
-      "available_dates": [
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/edinburgh-c21/the-edinburgh-dungeon-p975022",
@@ -1026,9 +748,7 @@
       "price": 29.7,
       "summary": "Michelangelo's frescoes in the Sistine Chapel are widely regarded as the finest artwork ever created. And that's not all; the Vatican Museums is full of artworks amassed by the popes over centuries; paintings, sculptures, tapestries, and more. With these skip-the-line tickets you'll head straight for the entrance. No waiting, just wall-to-wall artistic masterpieces (literally).",
       "city_id": 71631,
-      "available_dates": [
-        "2021-07-30"
-      ]
+      "available_dates": ["2021-07-30"]
     },
     {
       "product_url": "https://www.tiqets.com/en/new-york-c260932/the-metropolitan-museum-of-art-the-met-fast-track-p974087",
@@ -1038,9 +758,7 @@
       "price": 21.02,
       "summary": "Take a trip around the world and back in time, through thousands of pieces of priceless art. The Metropolitan Museum of Art (or The Met) is the largest art museum in the United States. Our mobile ticket gets you three-day, fast-track access to all exhibits at all three Met locations!",
       "city_id": 260932,
-      "available_dates": [
-        "2021-07-30"
-      ]
+      "available_dates": ["2021-07-30"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/musee-de-lorangerie-p974438",
@@ -1066,11 +784,7 @@
       "price": 26.96,
       "summary": "Hop aboard the trolley of the doomed and be _spirited_ around the oldest town in America on a tour of its most notoriously haunted sites. Summon your courage as you explore the history of death and occult occurrences in the Old Jail, Huguenot Cemetery, Potter's Wax Museum, and more spine-tingling locales with the help of a fittingly spooky _ghost guide_.",
       "city_id": 122690,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/carcassonne-c67073/cite-de-carcassonne-visit-the-castle-and-the-ramparts-p974695",
@@ -1080,9 +794,7 @@
       "price": 9,
       "summary": "Cité de Carcassonne attracts as many visitors each year as the more-famous Mont Saint-Michel. Even if you don't know this city, a visit here will captivate your imagination. 2,500 years of history, and massive 13th-century fortified walls, watchtowers, ramparts, and a castle call medieval sieges to mind. The museum (included in this ticket) also bring this fascinating history to life.",
       "city_id": 67073,
-      "available_dates": [
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/new-york-c260932/intrepid-sea-air-space-museum-priority-entrance-p974093",
@@ -1092,10 +804,7 @@
       "price": 22.13,
       "summary": "New York has a lot of vertical landmarks, like Statue of Liberty, Empire State Building. But the Intrepid Sea, Air & Space Museum is a next-level attraction… a military and maritime museum ON AN AIRCRAFT CARRIER! If you and your family like submarines, planes and space shuttles - hop aboard; the USS Intrepid has them all - and more!",
       "city_id": 260932,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/york-c67204/the-ghost-bus-tour-york-p975252",
@@ -1105,11 +814,7 @@
       "price": 17,
       "summary": "Did you know that quaint York is actually Europe's most haunted city? Board your spooky vintage bus for a guided moonlit tour of the city's grisliest sights. Discover York's macabre history, explore the historic Shambles on foot, and get ready for a murderously good time!",
       "city_id": 67204,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/key-west-c79844/ghosts-gravestones-key-west-p976096",
@@ -1119,10 +824,7 @@
       "price": 32.82,
       "summary": "As one of the oldest settlements in America, Key West has been the scene for a disturbing paranormal event or two in its time. Discover the haunting tales of America's southernmost ghosts aboard the _Trolley of the Doomed_ and explore the dark history that lurks beneath the surface of this seemingly peaceful seaside resort.",
       "city_id": 79844,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/musee-de-larmee-les-invalides-priority-entrance-p974519",
@@ -1162,10 +864,7 @@
       "price": 37,
       "summary": "The _Top of the Rock_ is a stunning, recently renovated observation deck smack in the middle of Manhattan. It's perched atop 30 Rock, the famous Art Deco building that's the centerpiece of Rockefeller Center. Skip the ticket line and get up to this 70th-floor observation deck and drink in panoramic views of the city that never sleeps, from Central Park to the Empire State Building.",
       "city_id": 260932,
-      "available_dates": [
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/paris-zoo-parc-zoologique-de-paris-p974427",
@@ -1175,11 +874,7 @@
       "price": 20,
       "summary": "When on your way here, keep an eye out for the *Big Rock*. This is a 65m-tall artificial mini-mountain, which is an iconic symbol of the Paris Zoological Park. Catching a glimpse of it means you're nearing an encounter with wild animals - including giraffes, rhinos, ring-tailed lemurs, seals and young lions. A day here puts you right into the heart of an animal-centric adventure. Don't forget your camera and pith helmet.",
       "city_id": 66746,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/edinburgh-c21/the-ghost-bus-tour-edinburgh-p974620",
@@ -1190,10 +885,7 @@
       "discount_percentage": 12,
       "summary": "Edinburgh has many intriguing spirits, but for once we're not talking about Scotch. Experience the other - more spectral - kind on this spooky evening tour. Sit back as your conductor whisks you through Edinburgh's most brutal bits of history on an ex-funeral bus! You'll hear about murders, witch hunts, torture, and hauntings. Prepare to be scared!",
       "city_id": 21,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/nice-c66770/aquasplash-p974816",
@@ -1203,9 +895,7 @@
       "price": 20.9,
       "summary": "Everything you need for you and your family to make a serious splash is right here at Aquasplash, an adrenaline-pumping waterpark in the epic Marineland. Float on the lazy river, get the heart racing on wild water rides _Draguero_ and the _Rainbow Cannon_, or simply soak up the sun. It's watery fun for all!",
       "city_id": 66770,
-      "available_dates": [
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/new-york-c260932/american-museum-of-natural-history-p974096",
@@ -1215,9 +905,7 @@
       "price": 20.57,
       "summary": "Go on an expedition to a Pacific Island, to the deep-sea floor, back to the age of the dinosaurs, or out to the edge of the Milky Way Galaxy – all without leaving the American Museum of Natural History.",
       "city_id": 260932,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/vienna-c60335/st-stephens-cathedral-stephansdom-towers-catacombs-treasury-and-tour-p974425",
@@ -1227,9 +915,7 @@
       "price": 14.9,
       "summary": "St. Stephen's Cathedral is one of the most important sights in Vienna. It is the symbol not just of the city - its distinctive silhouette adorns Austrian versions of the 10-cent coin.  If you're going to see it while in Vienna (and you *definitely* should), this all-inclusive ticket will make sure you leave no (church) stone unturned. You'll have access to every part of this famous monument - cathedral tour, treasury, catacombs, towers... don't just see this church, SEE it!",
       "city_id": 60335,
-      "available_dates": [
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/dubai-c60005/burj-khalifa-124th-125th-floor-cafe-p974510",
@@ -1239,9 +925,7 @@
       "price": 38.95,
       "summary": "Dubai is a city of glitz, glamor, and soaring skyscrapers, and a trip to the Burj Khalifa blends it all into one amazing experience. Head up in the world's fastest elevator to the heady heights of the 124th and 125th floors, where you'll gaze in awe at the city, desert and beyond. Then, when you're ready to come down, grab a hot drink and a tasty pastry at the ground-level cafe.",
       "city_id": 60005,
-      "available_dates": [
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/new-york-c260932/luna-park-in-coney-island-p974647",
@@ -1251,11 +935,7 @@
       "price": 61.71,
       "summary": "We all know New York for its speeding cabs and towering skyscrapers, but did you know there's also a theme park where thrilling rollercoasters hurtle over the beach? Get a whole day of fun and up to 28 different rides at Coney Island's Luna Park! On summer weekends, this pass is not available onsite - it's ONLY available through Tiqets!",
       "city_id": 260932,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/tenerife-c461/siam-park-p975155",
@@ -1265,9 +945,7 @@
       "price": 38,
       "summary": "Get ready to make waves, as you splash around the world's greatest water park. With dozens of pulse-pounding rides and family-friendly aquatic experiences, you can look forward to a wet and wild adventure, surrounded by a lush tropical 'jungle' and the stunning Tenerife vistas beyond.",
       "city_id": 461,
-      "available_dates": [
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/orlando-c79889/seaworld-florida-multi-park-pass-p975245",
@@ -1277,10 +955,7 @@
       "price": 114.47,
       "summary": "Serious about theme parks? Then this is the pass for you! You'll get access to some of the biggest and best theme parks in the world, while saving a ton on entry to Busch Gardens Tampa Bay, Aquatica Orlando, SeaWorld Orlando, and Adventure Island Tampa. Just choose your favorite parks, then decide which amazing adventure to tackle first. Hungry? We recommend the All-Day Dining Deal!",
       "city_id": 79889,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/cancun-c24/xcaret-fast-track-entrance-transport-p975360",
@@ -1290,11 +965,7 @@
       "price": 179.75,
       "summary": "Discover a world of eco-adventure in the leafy island paradise of Xcaret. Developed around the legendary archaeological site, Xcaret is overflowing with family-friendly activities and thrilling cultural experiences. Sail the paradise river, trek to the Mayan Village, explore Jaguar Island and more, in a magnificently Mexican day out.",
       "city_id": 24,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/washington-d-c-c79751/washington-dc-explorer-pass-p975462",
@@ -1304,9 +975,7 @@
       "price": 53.66,
       "summary": "Looking for the best things to do in Washington DC? Choose 3, 4, or 5 attractions and tours from 20 Washington DC favorites with the Washington DC Explorer Pass. Highlights on offer include Madame Tussauds DC, Big Bus DC Panoramic Night Tour, Washington Walks Walking Tours and many more!",
       "city_id": 79751,
-      "available_dates": [
-        "2021-07-30"
-      ]
+      "available_dates": ["2021-07-30"]
     },
     {
       "product_url": "https://www.tiqets.com/en/utrecht-c74866/railway-museum-utrecht-skip-the-line-p975490",
@@ -1316,11 +985,7 @@
       "price": 17.5,
       "summary": "Descend 250 meters in an elevator and climb out in the early 19th-century at the Railway Museum Utrecht. Explore a collection of locomotives, carriages, steam engines and even train sets, learn about the Netherlands' train history and little ones can play on the interactive exhibits! Calling all trainspotters!",
       "city_id": 74866,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/malaga-c32/bioparc-fuengirola-p974749",
@@ -1330,11 +995,7 @@
       "price": 19.5,
       "summary": "Step into the wilderness at Malaga's Bioparc Fuengirola. This thoroughly modern zoo uses 'invisible' barriers to separate the animals from visitors. There are four different habitats with more than 200 rare species. And you, you'll be here too, safely wandering among the monkeys, gorillas, giant tortoises, white tigers, and leopards.",
       "city_id": 32,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/lyon-c66838/mini-world-lyon-fast-track-p974774",
@@ -1359,9 +1020,7 @@
       "price": 29.9,
       "summary": "Time to dive in! Get close to animals in Antarctica, experience all kinds of other water-based encounters at one of Nice's best attractions! Take the kids to Marineland and experience everything from polar bears and sharks, dolphins, killer whale shows, and much more!",
       "city_id": 66770,
-      "available_dates": [
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/montpellier-c66788/towers-and-ramparts-of-aigues-mortes-p974840",
@@ -1371,11 +1030,7 @@
       "price": 9,
       "summary": "Climb up Saint Louis’ Keep and take a walk around the medieval fortifications of Aigues-Mortes. Once a port and then a prison, you can explore the medieval town's fortifications and see what life was like way back in the 13th century.",
       "city_id": 66788,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/rome-c71631/vatican-museums-sistine-chapel-last-minute-tickets-p974863",
@@ -1401,11 +1056,7 @@
       "price": 28,
       "summary": "Europe's most famous water park is buzzing with adrenaline-pumping rides like _Black Hole, Kamikaze, Extreme River, Twist_ and _Tobogas_! Skip the line and chill by the pool, take the kids to three special zones, or take the family for rafting fun on _StrizzaCOOL_!",
       "city_id": 71634,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/abu-dhabi-c60013/sheikh-zayed-grand-mosque-guided-tour-p976121",
@@ -1446,10 +1097,7 @@
       "discount_percentage": 2,
       "summary": "Looking for the ultimate alligator experience in the Sunshine State? _Snap_ up a ticket to Gatorland, and hightail it on over to Florida's incredible reptilian kingdom. Witness hundreds of guzzling gators and crafty crocs in frenzied feeding displays and nail-biting gator-safety demonstrations. \r\n\r\nSee slithery serpents and pouncing bobcats, as well as cougars, tortoises, tarantulas, a chatty parrot or two, and wash it all down with a smiling side order of southern hospitality.",
       "city_id": 79889,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/orlando-c79889/legoland-florida-resort-water-park-p977049",
@@ -1459,10 +1107,7 @@
       "price": 102.84,
       "summary": "Get your year's supply of belly laughs, thrilling rides, and waterslides - all in one afternoon of family-friendly fun. Meet water-skiing pirates, hone your razor-sharp ninja skills, enjoy creative workshops, play the best LEGO® videogames, and more - then cannonball into a world of watery good times!",
       "city_id": 79889,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31"]
     },
     {
       "product_url": "https://www.tiqets.com/en/orlando-c79889/kennedy-space-center-daily-admission-p977119",
@@ -1472,11 +1117,7 @@
       "price": 50.97,
       "summary": "Blast your imagination into the stratosphere, with a ticket to Kennedy Space Center Visitor Complex℠. Bringing the epic story of the U.S. space program to life, Kennedy Space Center offers more amazing family fun and mind-blowing science exhibits than you could possibly fit into one day - but you can certainly try! Stand in awe under the gigantic Saturn V, the largest rocket ever flown, see the iconic Space Shuttle Atlantis®, celebrate the pioneers of NASA’s early space programs, and more.",
       "city_id": 79889,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/cancun-c24/xcaret-fast-track-p975648",
@@ -1486,9 +1127,7 @@
       "price": 98.36,
       "summary": "The leafy island paradise of Xcaret promises a day of adventure to all who visit. Fast-track your way inside and sail the paradise river. Trek to the Mayan Village, explore _Jaguar Island_ and more in a magnificently Mexican day out.",
       "city_id": 24,
-      "available_dates": [
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/toulouse-c66619/cite-de-lespace-skip-the-line-p975967",
@@ -1498,10 +1137,7 @@
       "price": 21.5,
       "summary": "Skip the lines to Cité de l'Espace and enter an out-of-this-world space-oriented theme park! Climb aboard a Russian spacecraft, see what life's like on the International Space Station, look at pieces of the moon up close, and see an actual meteorite from Mars!",
       "city_id": 66619,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-02"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-02"]
     },
     {
       "product_url": "https://www.tiqets.com/en/orlando-c79889/the-wheel-at-icon-parkTM-p977211",
@@ -1511,10 +1147,7 @@
       "price": 26.66,
       "summary": "Fly high above Mickey Mouse and every other Orlando attraction on The Wheel at ICON Park™, the tallest observation wheel on the east coast! Enhance your experience with a champagne flight, or opt for a meal after your ride at one of the awesome participating restaurants. Up, up, and away!",
       "city_id": 79889,
-      "available_dates": [
-        "2021-07-31",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-31", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/rome-c71631/domitilla-catacombs-guided-tour-shuttle-bus-hop-on-hop-off-48h-p975589",
@@ -1524,10 +1157,7 @@
       "price": 65,
       "summary": "Get deep below the streets of Rome on a guided tour through the largest catacombs in the city. Take the Shuttle Bus and explore the Domitilla Catacombs with a knowledgeable and entertaining guide _plus_ get 48 hours of Hop-on Hop-off Bus transport around Rome!",
       "city_id": 71631,
-      "available_dates": [
-        "2021-07-30",
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-07-30", "2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/paris-c66746/palace-of-versailles-access-all-areas-fountain-shows-or-musical-gardens-p974125",
@@ -1553,9 +1183,7 @@
       "discount_percentage": 17,
       "summary": "When you're crafty and clever, Italians applaud your _furbizia_. And with this pass you’ll definitely feel like a sly insider. It gives you full access to Rome’s public transport system, free entry to one or two of Rome’s key attractions (depending on which option you pick) and discounts for further museum visits. Just pick it up from the Tourist Info Point and you're off! You’ll save money, time and stress (so you can treat yourself to an extra scoop of gelato).",
       "city_id": 71631,
-      "available_dates": [
-        "2021-08-01"
-      ]
+      "available_dates": ["2021-08-01"]
     },
     {
       "product_url": "https://www.tiqets.com/en/venice-c71510/st-marks-basilica-audio-guide-p975846",
@@ -1565,10 +1193,7 @@
       "price": 5,
       "summary": "Plug into your fact-packed audioguide for a journey through the most visited site in Venice - St. Mark's Basilica. Explore the Byzantine art, get the facts on this 9th-century masterpiece, and continue the history trip with an optional audioguide for St Mark Square.",
       "city_id": 71510,
-      "available_dates": [
-        "2021-07-30",
-        "2021-07-31"
-      ]
+      "available_dates": ["2021-07-30", "2021-07-31"]
     }
   ]
 }
