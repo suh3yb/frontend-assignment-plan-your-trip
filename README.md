@@ -25,13 +25,13 @@ There are essentially 3 main sections in the app:
 
 ### 2) Date Picker
 
-* On mobile, the first 5 Dates should be shown. On desktop, the first 8 Dates should be shown.
+* On mobile, at least the first 4 Dates should be shown. As the viewport gets wider, then up to 8 Dates should be shown.
 * Initially, all Dates will be disabled. Only after selecting a City the Dates will become enabled.
 * The data for the avaiable Dates is provided by a JSON API. [See API details](#apis) below.
 
 ### 3) Search Results / List of Products / Product Card
 
-* After selecting a Date, the app should make a request to the product search API (provided, [see API details](#apis) below). The response will be a list of products, which data will be used to render the list of results.
+* After selecting a Date, the app should make a request to the product search JSON API (provided, [see API details](#apis) below). The response will be a list of products, which data will be used to render the list of results.
 * Each product is visually represented by a Product Card. The card has a different layout between mobile and desktop.
 * Each card shows: title, short description (desktop-only), image, and price.
 * Some products include a *discount percentage*. In this case, a *pre-discount price* should be shown in the card. This *pre-discount* is **calculated** based on the *price* and the *discount percentage*.
@@ -47,7 +47,7 @@ We provide all the JSON API endpoints.
 ### City and Country
 
 ```
-endpoint-url.here
+localhost:3001/locations
 ```
 
 This endpoint returns the fixed list of countries as well as the list of cities and the cities' IDs, all in a single response.
@@ -73,37 +73,47 @@ This endpoint returns the fixed list of countries as well as the list of cities 
 ### Dates
 
 ```
-endpoint-url.here
+http://localhost:3001/available_dates
 ```
 
 This endpoint returns the fixed list of Dates that should be shown, all in a single response.
 
 ```
 {
-  "dates": ["2021-12-31", "2022-01-01", ..., "2022-01-05"]
+  "dates": ["2021-07-30", "2021-07-31", ... , "2021-08-07"]
 }
 ```
 
 ### Product Search
 
 ```
-endpoint-url.here
+http://localhost:3001/products?date=2021-07-31&city=66154
 ```
 
 This endpoint returns a dynamic list of products, based on the URL parameters passed.
 
-* `city_id` - the ID of a city. Number. Required. Example: `city_id=321`.
-* `date` - date, formatted in ISO. String. Required. Example: `date="2021-12-25"`.
+* `city` - the ID of a city. Number. Required. Example: `city=321`.
+* `date` - date, formatted in ISO. String. Required. Example: `date=2021-12-25`.
 
 ```
-{
-	"products": [
-		{
-			
-		},
-		...
-	]
-}
+[
+  {
+    "product_url": "https://www.tiqets.com/en/new-york-c260932/one-world-observatory-skip-the-ticket-line-p974086",
+    "image": "https://aws-tiqets-cdn.imgix.net/images/content/872e70b2fd394cbdb523f4c47291d185.jpg?auto=format&fit=crop&ixlib=python-1.1.2&q=70&s=b2588a1809f5506cc00ac96653e41da8",
+    "id": 974086,
+    "title": "One World Observatory: Skip The Ticket Line",
+    "price": 31.3,
+    "discount_percentage": 15,
+    "summary": "Looking for the best views in town? We can do one better – how about the best views in the Western Hemisphere? The newly completed One World Trade Center stands proud as the 6th tallest building in the world, and now you can blast straight to the top and enjoy breathtaking views of New York City and beyond.",
+    "city_id": 260932,
+    "available_dates": [
+      "2021-07-30",
+      "2021-07-31",
+      ...
+    ]
+  },
+  ...
+]
 ```
 
 ## General guidelines
@@ -114,3 +124,19 @@ Here's a few things that we generally expect in the delivery:
 * As few external or 3rd-party libraries as possible.
 * Use of semantic, accessible markup.
 * All scripting must be written in TypeScript.
+* For styling, you're welcome to use any tool you prefer.
+
+## General information
+
+* The app was bootstrapped with Create React App.
+* In this repo we're using npm, and not yarn.
+* It should work in Node v12 or above.
+
+## Delivery
+
+Once you finish the assignment and you're ready to send your code to us, you can either:
+
+1. Zip the whole directory and send us the file (please do not include the `node_modules` main directory!) or
+2. Publish your code into a GitHub repository and send us the link.
+   If you prefer to keep it private, you can add the **`tiqets-fe`** user as a project collaborator,
+   so we can access it.
