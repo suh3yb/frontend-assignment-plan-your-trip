@@ -116,6 +116,8 @@ This endpoint returns a dynamic list of products, based on the URL parameters pa
 ]
 ```
 
+Note: the images are hosted by Imgix's CDN. [Read their documentation](https://docs.imgix.com/apis/rendering/size) on how to control the size of the image.
+
 ## General guidelines
 
 Here's a few things that we generally expect in the delivery:
