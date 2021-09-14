@@ -33,7 +33,7 @@ There are essentially 3 main sections in the app:
 
 - After selecting a Date, the app should make a request to the product search JSON API (provided, [see API details](#apis) below). The response will be a list of products, which data will be used to render the list of results.
 - Each product is visually represented by a Product Card. The card has a different layout between mobile and desktop.
-- Each card shows: title, short description (desktop-only), image, and price.
+- Each card shows: title, short description, image, and price.
 - Some products include a _discount percentage_. In this case, a _pre-discount price_ should be shown in the card. This _pre-discount_ is **calculated** based on the _price_ and the _discount percentage_.
 - The product image on the card has a different aspect ratio between mobile and desktop. The images should be lazy-loaded.
 - Clicking the card should navigate users to the Tiqets.com page for that product.
