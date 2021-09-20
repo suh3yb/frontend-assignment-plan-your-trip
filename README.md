@@ -25,7 +25,8 @@ There are essentially 3 main sections in the app:
 
 ### 2) Date Picker
 
-- On mobile, at least the first 5 Dates should be shown. As the viewport gets wider, then up to 8 Dates should be shown.
+- On mobile, at least the first 4 Dates should be shown. As the viewport gets wider, then up to 7 Dates should be shown.
+  - Note: the design shows 5 Dates on Mobile, as there is enough available space on devices with a 375px wide viewport, but please also consider smaller viewports.
 - Initially, all Dates will be disabled. Only after selecting a City the Dates will become enabled.
 - The data for the avaiable Dates is provided by a JSON API. [See API details](#apis) below.
 
