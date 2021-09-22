@@ -40,6 +40,7 @@ There are essentially 3 main sections in the app:
 - Clicking the card should navigate users to the Tiqets.com page for that product.
 - On mobile, the cards should be shown in a single column - in other words, on top of each other. On desktop, they should be shown in 2 columns, as shown in the [Design specification](#design-specification).
 - For the layout of this list of products, **CSS Grid** should be used.
+- If no products were found, show a message: "Nothing found, please try a different date".
 
 ## APIs
 
