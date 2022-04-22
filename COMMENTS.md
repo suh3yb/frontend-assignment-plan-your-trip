@@ -4,11 +4,11 @@ Please answer these questions once you have finished the assignment.
 
 _[Your answer goes here]_
 
-**Which part did you consider the most difficult, or did yo spent most of your time on?**
+**Which part did you consider the most difficult, or did you spend most of your time on?**
 
 _[Your answer goes here]_
 
-**Which parts were not able to fully implement?**
+**Which parts were you not able to fully implement?**
 
 _[Your answer goes here]_
 
