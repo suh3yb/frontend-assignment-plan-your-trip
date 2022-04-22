@@ -143,7 +143,9 @@ In order to get started working:
 
 ## Delivery
 
-Once you finish the assignment and you're ready to send your code to us, you can either:
+Once you have finished the assignment, please answer the questions in `COMMENTS.md`. We're curious to your findings!
+
+To send your code to us, you can either:
 
 1. Zip the whole directory and send us the file (please do not include the `node_modules` main directory!) or
 2. Publish your code into a GitHub repository and send us the link.
