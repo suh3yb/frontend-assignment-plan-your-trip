@@ -12,7 +12,7 @@ _[Your answer goes here]_
 
 _[Your answer goes here]_
 
-**What would add or improve if you had more time?**
+**What would you add or improve if you had more time?**
 
 _[Your answer goes here]_
 
