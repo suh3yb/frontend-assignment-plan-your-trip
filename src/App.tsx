@@ -1,5 +1,12 @@
 import React from 'react';
 
-const App: React.FC = () => <h1>Plan your trip!</h1>;
+import Layout from './components/Layout';
+import TripPlanner from './components/TripPlanner';
+
+const App: React.FC = () => (
+  <Layout>
+    <TripPlanner />
+  </Layout>
+);
 
 export default App;
