@@ -1,5 +1,22 @@
+:root {
+  /* COLORS */
+  --primary-bg-dark: #4e2b6e;
+  --primary-bg-light: #9856db;
+  --secondary-bg: #333333;
+  --text-light: #ffffff;
+  --text-dark: #0e0e0e;
+  --border-transparent: rgba(52, 52, 52, 0.1);
+  --border-dark: #000000;
+
+  /* DIMENSIONS MOBILE */
+  --header-height: 124px;
+  --footer-height: 64px;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
 }
