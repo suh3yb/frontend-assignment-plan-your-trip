@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Select from './Select';
+import DatePicker from './DatePicker';
 import { Locations, Dates } from '../types';
 import './tripPlanner.css';
 
@@ -54,6 +55,12 @@ const TripPlanner: React.FC = () => {
     fetchDates();
   }, []);
 
+  useEffect(() => {
+    if (selectedCountry === '' && selectedCity !== '') {
+      setSelectedCity('');
+    }
+  }, [selectedCountry, selectedCity, setSelectedCity]);
+
   const cityOptions = useMemo(() => {
     if (!locations || !selectedCountry) return;
     return locations[selectedCountry].map(city => city[1]);
@@ -81,7 +88,11 @@ const TripPlanner: React.FC = () => {
         options={cityOptions}
         setValue={setSelectedCity}
       />
-      <pre>{JSON.stringify(dates, null, 2)}</pre>
+      <DatePicker
+        disabled={!selectedCity}
+        options={dates}
+        setValue={setSelectedDate}
+      />
     </div>
   );
 };
