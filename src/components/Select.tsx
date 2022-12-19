@@ -1,4 +1,5 @@
 import React, { useCallback, useMemo } from 'react';
+import { addDisabledClass } from '../utils/classNameHelpers';
 import './select.css';
 
 interface Props {
@@ -31,14 +32,10 @@ const Select: React.FC<Props> = ({
     [options]
   );
 
-  const selectionElemClass = useMemo(() => {
-    let className = 'selection';
-    if (!options) {
-      className += ' selection--disabled';
-    }
-
-    return className;
-  }, [options]);
+  const selectionElemClass = useMemo(
+    () => addDisabledClass('selection', !options),
+    [options]
+  );
 
   const selectElemId = useMemo(
     () => `${label}-${defaultOption}`,

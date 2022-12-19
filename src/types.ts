@@ -4,4 +4,4 @@ export type Locations = {
   [country: string]: City[];
 };
 
-export type Dates = { dates: string[] };
+export type Dates = string[];

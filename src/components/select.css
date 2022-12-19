@@ -24,7 +24,7 @@
   position: relative;
   width: 100%;
   height: 48px;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   border-color: var(--border-dark);
   padding: 8px;
   font-family: inherit;

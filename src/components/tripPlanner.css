@@ -1,4 +1,4 @@
 .selection-wrapper {
-  padding: 16px;
+  padding: var(--padding-page-mobile);
   border-bottom: 1px solid var(--border-transparent);
 }
