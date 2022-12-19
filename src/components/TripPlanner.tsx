@@ -1,16 +1,34 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Select from './Select';
 import DatePicker from './DatePicker';
-import { Locations, Dates } from '../types';
+import ProductCard from './ProductCard';
+import {
+  LocationsResponse,
+  DatesResponse,
+  ProductsResponse,
+  Cities,
+} from '../types';
+import {
+  getDiscountedPrice,
+  mapCityResponseToCitiesObj,
+} from '../utils/dataHelpers';
 import './tripPlanner.css';
+import Products from './Products';
 
 const TripPlanner: React.FC = () => {
-  const [locations, setLocations] = useState<Locations | undefined>();
-  const [dates, setDates] = useState<Dates | undefined>();
+  const [locations, setLocations] = useState<LocationsResponse | undefined>();
+  const [dates, setDates] = useState<DatesResponse | undefined>();
+  const [products, setProducts] = useState<ProductsResponse | undefined>();
   const [error, setError] = useState<string | undefined>();
   const [selectedCountry, setSelectedCountry] = useState<string>('');
   const [selectedCity, setSelectedCity] = useState<string>('');
   const [selectedDate, setSelectedDate] = useState<string>('');
+
+  const cities = useMemo<Cities | undefined>(() => {
+    if (!locations || !selectedCountry) return;
+
+    return mapCityResponseToCitiesObj(locations[selectedCountry]);
+  }, [[locations, selectedCountry]]);
 
   const fetchLocations = useCallback(async () => {
     try {
@@ -50,21 +68,44 @@ const TripPlanner: React.FC = () => {
     }
   }, []);
 
+  const fetchProducts = useCallback(async () => {
+    try {
+      if (!selectedDate || !cities?.[selectedCity]) return;
+
+      const res = await fetch(
+        `http://localhost:3001/products?date=${selectedDate}&city_id=${cities[selectedCity]}`
+      );
+      if (!res.ok) {
+        throw new Error('Error fetching products');
+      }
+      const response = await res.json();
+      console.log('response :>> ', response);
+      setProducts(response);
+    } catch (error) {
+      if (typeof error === 'string') {
+        setError(error);
+      } else if (error instanceof Error) {
+        setError(error.message);
+      } else {
+        setError('Error fetching product');
+      }
+    }
+  }, [selectedDate, cities, selectedCity]);
+
   useEffect(() => {
     fetchLocations();
     fetchDates();
   }, []);
 
   useEffect(() => {
-    if (selectedCountry === '' && selectedCity !== '') {
+    if (selectedCity !== '') {
       setSelectedCity('');
     }
-  }, [selectedCountry, selectedCity, setSelectedCity]);
+  }, [selectedCountry]);
 
-  const cityOptions = useMemo(() => {
-    if (!locations || !selectedCountry) return;
-    return locations[selectedCountry].map(city => city[1]);
-  }, [locations, selectedCountry]);
+  useEffect(() => {
+    fetchProducts();
+  }, [selectedCity, selectedDate]);
 
   if (error) {
     return <h1>{error}</h1>;
@@ -75,25 +116,28 @@ const TripPlanner: React.FC = () => {
   }
 
   return (
-    <div className="selection-wrapper">
-      <Select
-        label="Country"
-        defaultOption="Choose the country"
-        options={Object.keys(locations)}
-        setValue={setSelectedCountry}
-      />
-      <Select
-        label="City"
-        defaultOption="Choose the city"
-        options={cityOptions}
-        setValue={setSelectedCity}
-      />
-      <DatePicker
-        disabled={!selectedCity}
-        options={dates}
-        setValue={setSelectedDate}
-      />
-    </div>
+    <>
+      <div className="selection-wrapper">
+        <Select
+          label="Country"
+          defaultOption="Choose the country"
+          options={Object.keys(locations)}
+          setValue={setSelectedCountry}
+        />
+        <Select
+          label="City"
+          defaultOption="Choose the city"
+          options={cities && Object.keys(cities)}
+          setValue={setSelectedCity}
+        />
+        <DatePicker
+          disabled={!selectedCity}
+          options={dates}
+          setValue={setSelectedDate}
+        />
+      </div>
+      <Products products={products} />
+    </>
   );
 };
 

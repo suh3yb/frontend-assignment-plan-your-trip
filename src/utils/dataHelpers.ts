@@ -10,3 +10,8 @@ export const mapCityResponseToCitiesObj = (
     });
     return prevValue;
   }, {});
+
+export const getDiscountedPrice = (
+  price: number,
+  discountPercentage: number
+): string => ((price * (100 - discountPercentage)) / 100).toFixed(2);

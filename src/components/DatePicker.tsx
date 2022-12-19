@@ -1,16 +1,17 @@
-import React, { useMemo } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { addAnimateClass, addDisabledClass } from '../utils/classNameHelpers';
-import { getShortenedDayName } from '../utils/dateHelper';
-import { Dates } from '../types';
+import { getShortenedDayName } from '../utils/dateHelpers';
+import { DatesResponse } from '../types';
 import './datePicker.css';
 
 interface Props {
-  options: Dates;
+  options: DatesResponse;
   disabled: boolean;
   setValue: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const DatePicker: React.FC<Props> = ({ options, disabled }) => {
+const DatePicker: React.FC<Props> = ({ options, disabled, setValue }) => {
+  const handleChange = useCallback(() => {}, []);
   const fieldsetElemClass = useMemo(
     () => addDisabledClass('date-picker__fieldset', disabled),
     [disabled]
@@ -22,8 +23,8 @@ const DatePicker: React.FC<Props> = ({ options, disabled }) => {
   );
 
   return (
-    <fieldset className={fieldsetElemClass}>
-      <legend className="date-picker__fieldset__legend">Dates:</legend>
+    <fieldset className={fieldsetElemClass} disabled={disabled}>
+      <legend className="date-picker__fieldset__legend">Dates</legend>
       <div className={datesWrapperElemClass}>
         {options.map((date, index) => {
           const convertedDate = new Date(date);
@@ -39,6 +40,9 @@ const DatePicker: React.FC<Props> = ({ options, disabled }) => {
                 id={`${date}-${index}`}
                 name="date"
                 value={date}
+                onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                  setValue(event.target.value);
+                }}
               />
               <label
                 className="date-picker__fieldset__dates-wrapper__label"

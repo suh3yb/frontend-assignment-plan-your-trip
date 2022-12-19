@@ -5,6 +5,8 @@
   --secondary-bg: #333333;
   --text-light: #ffffff;
   --text-dark: #0e0e0e;
+  --text-important: #bb0e16;
+  --shadow: #999999;
 
   /* DIMENSIONS MOBILE */
   --header-height: 124px;
@@ -16,7 +18,7 @@
   /* BORDER */
   --border-transparent: rgba(52, 52, 52, 0.1);
   --border-dark: #000000;
-  --border-radius: 5px;
+  --border-radius: 7px;
 }
 
 body {
@@ -25,4 +27,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
 }
