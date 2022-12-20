@@ -1,12 +1,11 @@
 import { useEffect, useCallback, useState } from 'react';
-import { Cities, ProductsResponse } from '../types';
+import { ProductsResponse } from '../types';
 import { getErrorMessage } from '../utils/dataHelpers';
 
 const DEFAULT_ERROR_MESSAGE = 'Error fetching products';
 
 type UseProducts = (
-  cities: Cities | undefined,
-  selectedCity: string,
+  selectedCityId: string,
   selectedDate: string
 ) => {
   products: ProductsResponse | undefined;
@@ -14,20 +13,16 @@ type UseProducts = (
   isLoading: boolean;
 };
 
-export const useProducts: UseProducts = (
-  cities,
-  selectedCity,
-  selectedDate
-) => {
+export const useProducts: UseProducts = (selectedCityId, selectedDate) => {
   const [products, setProducts] = useState<ProductsResponse | undefined>();
   const [error, setError] = useState<string | undefined>();
 
   const fetchProducts = useCallback(async () => {
-    if (!selectedDate || !cities?.[selectedCity]) return;
+    if (!selectedDate || !selectedCityId) return;
 
     try {
       const res = await fetch(
-        `http://localhost:3001/products?date=${selectedDate}&city_id=${cities[selectedCity]}`
+        `http://localhost:3001/products?date=${selectedDate}&city_id=${selectedCityId}`
       );
       if (!res.ok) {
         throw new Error(DEFAULT_ERROR_MESSAGE);
@@ -37,15 +32,15 @@ export const useProducts: UseProducts = (
     } catch (error) {
       setError(getErrorMessage(error, DEFAULT_ERROR_MESSAGE));
     }
-  }, [selectedDate, cities, selectedCity]);
+  }, [selectedDate, selectedCityId]);
 
   useEffect(() => {
     fetchProducts();
-  }, [selectedCity, selectedDate]);
+  }, [selectedCityId, selectedDate]);
 
   return {
     products,
     error,
-    isLoading: Boolean(selectedCity && selectedDate) && !products && !error,
+    isLoading: Boolean(selectedCityId && selectedDate) && !products && !error,
   };
 };
