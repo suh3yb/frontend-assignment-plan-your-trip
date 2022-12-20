@@ -18,6 +18,7 @@ const DatePicker: React.FC<Props> = ({ options, disabled, setValue }) => {
     },
     [setValue]
   );
+
   const fieldsetElemClass = useMemo(
     () => addModifierToClass('date-picker__fieldset', 'disabled', disabled),
     [disabled]

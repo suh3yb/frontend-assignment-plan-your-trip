@@ -1,22 +1,23 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import {
-  LocationsResponse,
-  DatesResponse,
-  ProductsResponse,
-  Cities,
-} from '../types';
-import { mapCityResponseToCitiesObj } from '../utils/dataHelpers';
+import React, { useEffect, useMemo, useState } from 'react';
 import Filter from './Filter';
 import DatePicker from './DatePicker';
 import Products from './Products';
 import { ReactComponent as Spinner } from '../assets/spinner.svg';
 import './tripPlanner.css';
+import { useLocations } from '../hooks/useLocations';
+import { useDates } from '../hooks/useDates';
+import { useProducts } from '../hooks/useProducts';
+import { Cities } from '../types';
+import { mapCityResponseToCitiesObj } from '../utils/dataHelpers';
 
 const TripPlanner: React.FC = () => {
-  const [locations, setLocations] = useState<LocationsResponse | undefined>();
-  const [dates, setDates] = useState<DatesResponse | undefined>();
-  const [products, setProducts] = useState<ProductsResponse | undefined>();
-  const [error, setError] = useState<string | undefined>();
+  const {
+    locations,
+    error: locationsError,
+    isLoading: isLocationsLoading,
+  } = useLocations();
+  const { dates, error: datesError, isLoading: isDatesLoading } = useDates();
+
   const [selectedCountry, setSelectedCountry] = useState<string>('');
   const [selectedCity, setSelectedCity] = useState<string>('');
   const [selectedDate, setSelectedDate] = useState<string>('');
@@ -27,71 +28,11 @@ const TripPlanner: React.FC = () => {
     return mapCityResponseToCitiesObj(locations[selectedCountry]);
   }, [[locations, selectedCountry]]);
 
-  const fetchLocations = useCallback(async () => {
-    try {
-      const res = await fetch('http://localhost:3001/locations');
-      if (!res.ok) {
-        throw new Error('Error fetching locations');
-      }
-      const response = await res.json();
-      setLocations(response);
-    } catch (error) {
-      if (typeof error === 'string') {
-        setError(error);
-      } else if (error instanceof Error) {
-        setError(error.message);
-      } else {
-        setError('Error fetching location');
-      }
-    }
-  }, []);
-
-  const fetchDates = useCallback(async () => {
-    try {
-      const res = await fetch('http://localhost:3001/available_dates');
-      if (!res.ok) {
-        throw new Error('Error fetching available dates');
-      }
-      const response = await res.json();
-      setDates(response);
-    } catch (error) {
-      if (typeof error === 'string') {
-        setError(error);
-      } else if (error instanceof Error) {
-        setError(error.message);
-      } else {
-        setError('Error fetching available dates');
-      }
-    }
-  }, []);
-
-  const fetchProducts = useCallback(async () => {
-    try {
-      if (!selectedDate || !cities?.[selectedCity]) return;
-
-      const res = await fetch(
-        `http://localhost:3001/products?date=${selectedDate}&city_id=${cities[selectedCity]}`
-      );
-      if (!res.ok) {
-        throw new Error('Error fetching products');
-      }
-      const response = await res.json();
-      setProducts(response);
-    } catch (error) {
-      if (typeof error === 'string') {
-        setError(error);
-      } else if (error instanceof Error) {
-        setError(error.message);
-      } else {
-        setError('Error fetching product');
-      }
-    }
-  }, [selectedDate, cities, selectedCity]);
-
-  useEffect(() => {
-    fetchLocations();
-    fetchDates();
-  }, []);
+  const {
+    products,
+    error: productsError,
+    isLoading: isProductsLoading,
+  } = useProducts(cities, selectedCity, selectedDate);
 
   useEffect(() => {
     if (selectedCity !== '') {
@@ -99,16 +40,17 @@ const TripPlanner: React.FC = () => {
     }
   }, [selectedCountry]);
 
-  useEffect(() => {
-    fetchProducts();
-  }, [selectedCity, selectedDate]);
-
-  if (error) {
-    return <p className="error-message">{error}</p>;
+  if (isLocationsLoading || isDatesLoading) {
+    return <Spinner className="spinner" />;
   }
 
-  if (!locations || !dates) {
-    return <Spinner className="spinner" />;
+  if (locationsError || datesError) {
+    return (
+      <>
+        {locationsError && <p className="error-message">{locationsError}</p>}
+        {datesError && <p className="error-message">{datesError}</p>}
+      </>
+    );
   }
 
   return (
@@ -117,7 +59,7 @@ const TripPlanner: React.FC = () => {
         <Filter
           label="Country"
           defaultOption="Choose the country"
-          options={Object.keys(locations)}
+          options={locations && Object.keys(locations)}
           setValue={setSelectedCountry}
         />
         <Filter
@@ -128,12 +70,19 @@ const TripPlanner: React.FC = () => {
         />
         <DatePicker
           disabled={!selectedCity}
-          options={dates}
+          options={dates!}
           setValue={setSelectedDate}
         />
       </div>
       <div className="page-separator" />
-      <Products products={products} />
+      {isProductsLoading ? (
+        <Spinner className="spinner" />
+      ) : (
+        <>
+          {products && <Products products={products} />}
+          {productsError && <p className="error-message">{productsError}</p>}
+        </>
+      )}
     </>
   );
 };
