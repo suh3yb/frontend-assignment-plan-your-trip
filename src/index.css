@@ -17,6 +17,7 @@
 
   /* SPACING */
   --padding-page-mobile: 24px 16px;
+  --grid-gap-desktop: 12px;
 
   /* BORDER */
   --border-transparent: rgba(52, 52, 52, 0.1);
