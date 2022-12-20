@@ -79,7 +79,6 @@ const TripPlanner: React.FC = () => {
         throw new Error('Error fetching products');
       }
       const response = await res.json();
-      console.log('response :>> ', response);
       setProducts(response);
     } catch (error) {
       if (typeof error === 'string') {
@@ -116,7 +115,7 @@ const TripPlanner: React.FC = () => {
   }
 
   return (
-    <>
+    <div className="intro-appear">
       <div className="selection-wrapper">
         <Select
           label="Country"
@@ -137,7 +136,7 @@ const TripPlanner: React.FC = () => {
         />
       </div>
       <Products products={products} />
-    </>
+    </div>
   );
 };
 

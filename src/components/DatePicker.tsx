@@ -11,7 +11,12 @@ interface Props {
 }
 
 const DatePicker: React.FC<Props> = ({ options, disabled, setValue }) => {
-  const handleChange = useCallback(() => {}, []);
+  const handleChange = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setValue(event.target.value);
+    },
+    [setValue]
+  );
   const fieldsetElemClass = useMemo(
     () => addDisabledClass('date-picker__fieldset', disabled),
     [disabled]
@@ -40,9 +45,7 @@ const DatePicker: React.FC<Props> = ({ options, disabled, setValue }) => {
                 id={`${date}-${index}`}
                 name="date"
                 value={date}
-                onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-                  setValue(event.target.value);
-                }}
+                onChange={handleChange}
               />
               <label
                 className="date-picker__fieldset__dates-wrapper__label"

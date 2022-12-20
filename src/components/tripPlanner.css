@@ -1,3 +1,24 @@
+@keyframes appear {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.intro-appear {
+  animation-name: appear;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
 .selection-wrapper {
   padding: var(--padding-page-mobile);
   border-bottom: 1px solid var(--border-transparent);
