@@ -1,19 +1,21 @@
 import React, { useCallback, useMemo } from 'react';
 import { addDisabledClass } from '../utils/classNameHelpers';
-import './select.css';
+import './filter.css';
 
 interface Props {
   label: string;
   defaultOption: string;
   options?: string[];
   setValue: React.Dispatch<React.SetStateAction<string>>;
+  className?: string;
 }
 
-const Select: React.FC<Props> = ({
+const Filter: React.FC<Props> = ({
   label,
   defaultOption,
   options,
   setValue,
+  className,
 }) => {
   const handleChange = useCallback(
     (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -32,10 +34,13 @@ const Select: React.FC<Props> = ({
     [options]
   );
 
-  const selectionElemClass = useMemo(
-    () => addDisabledClass('selection', !options),
-    [options]
-  );
+  const selectionElemClass = useMemo(() => {
+    let baseClass = addDisabledClass('filter', !options);
+    if (className) {
+      baseClass += ` ${className}`;
+    }
+    return baseClass;
+  }, [options, className]);
 
   const selectElemId = useMemo(
     () => `${label}-${defaultOption}`,
@@ -44,12 +49,12 @@ const Select: React.FC<Props> = ({
 
   return (
     <div className={selectionElemClass}>
-      <label className="selection__label" htmlFor={selectElemId}>
+      <label className="filter__label" htmlFor={selectElemId}>
         {label}
       </label>
       <select
         id={selectElemId}
-        className="selection__select"
+        className="filter__select"
         defaultValue=""
         onChange={handleChange}
       >
@@ -60,4 +65,4 @@ const Select: React.FC<Props> = ({
   );
 };
 
-export default Select;
+export default Filter;

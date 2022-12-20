@@ -1,25 +1,37 @@
-@keyframes appear {
-  0% {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.error-message {
+  margin: 24px;
+  text-align: center;
+  color: var(--text-important);
 }
 
-.intro-appear {
-  animation-name: appear;
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards;
+.spinner {
+  margin: auto;
 }
 
 .selection-wrapper {
-  padding: var(--padding-page-mobile);
-  border-bottom: 1px solid var(--border-transparent);
+  padding: 24px var(--padding-page-mobile);
+}
+
+.page-separator {
+  height: 1px;
+  width: 100vw;
+  background-color: var(--border-transparent);
+}
+
+@media (min-width: 768px) {
+  .error-message {
+    max-width: var(--max-width);
+  }
+
+  .selection-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .selection-wrapper__filter {
+    flex: 0 0 calc(50% - 12px);
+  }
 }

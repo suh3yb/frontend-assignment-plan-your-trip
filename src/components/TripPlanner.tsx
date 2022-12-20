@@ -1,19 +1,16 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import Select from './Select';
-import DatePicker from './DatePicker';
-import ProductCard from './ProductCard';
 import {
   LocationsResponse,
   DatesResponse,
   ProductsResponse,
   Cities,
 } from '../types';
-import {
-  getDiscountedPrice,
-  mapCityResponseToCitiesObj,
-} from '../utils/dataHelpers';
-import './tripPlanner.css';
+import { mapCityResponseToCitiesObj } from '../utils/dataHelpers';
+import Filter from './Filter';
+import DatePicker from './DatePicker';
 import Products from './Products';
+import { ReactComponent as Spinner } from '../assets/spinner.svg';
+import './tripPlanner.css';
 
 const TripPlanner: React.FC = () => {
   const [locations, setLocations] = useState<LocationsResponse | undefined>();
@@ -107,36 +104,40 @@ const TripPlanner: React.FC = () => {
   }, [selectedCity, selectedDate]);
 
   if (error) {
-    return <h1>{error}</h1>;
+    return <p className="error-message">{error}</p>;
   }
 
   if (!locations || !dates) {
-    return <h1>Spinner</h1>;
+    return <Spinner className="spinner" />;
   }
 
   return (
-    <div className="intro-appear">
+    <>
       <div className="selection-wrapper">
-        <Select
+        <Filter
+          className="selection-wrapper__filter"
           label="Country"
           defaultOption="Choose the country"
           options={Object.keys(locations)}
           setValue={setSelectedCountry}
         />
-        <Select
+        <Filter
+          className="selection-wrapper__filter"
           label="City"
           defaultOption="Choose the city"
           options={cities && Object.keys(cities)}
           setValue={setSelectedCity}
         />
         <DatePicker
+          className="selection-wrapper__date-picker"
           disabled={!selectedCity}
           options={dates}
           setValue={setSelectedDate}
         />
       </div>
+      <div className="page-separator" />
       <Products products={products} />
-    </div>
+    </>
   );
 };
 
