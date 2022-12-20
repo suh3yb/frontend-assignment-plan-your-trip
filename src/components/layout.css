@@ -13,6 +13,12 @@
   }
 }
 
+.appear {
+  animation-name: appear;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
 .header {
   height: var(--header-height);
   display: flex;
@@ -34,9 +40,6 @@
   flex-direction: column;
   flex-wrap: nowrap;
   min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
-  animation-name: appear;
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards;
 }
 
 .footer {

@@ -1,22 +1,8 @@
-.error-message {
-  margin: 24px;
-  text-align: center;
-  color: var(--text-important);
-}
-
-.spinner {
-  margin: auto;
-}
-
 .filters-wrapper {
   padding: var(--padding-page-mobile);
 }
 
 @media (min-width: 768px) {
-  .error-message {
-    max-width: var(--max-width);
-  }
-
   .filters-wrapper {
     display: flex;
     flex-wrap: wrap;

@@ -1,8 +1,9 @@
 import React from 'react';
-import { ProductsResponse } from '../types';
-import { getDiscountedPrice } from '../utils/dataHelpers';
 import { useResize } from '../hooks/useResize';
+import { useProducts } from '../hooks/useProducts';
+import { getDiscountedPrice } from '../utils/dataHelpers';
 import ProductCard from './ProductCard';
+import { ReactComponent as Spinner } from '../assets/spinner.svg';
 import './products.css';
 
 const DESKTOP_WIDTH = 768;
@@ -12,11 +13,25 @@ const MOBILE_IMG_MAX_HEIGHT = '240'; // 120px * 2 for retina
 const DESKTOP_IMG_MAX_HEIGHT = '400'; // 200px * 2 for retina
 
 interface Props {
-  products?: ProductsResponse;
+  selectedCityId: string;
+  selectedDate: string;
 }
 
-const Products: React.FC<Props> = ({ products }) => {
+const Products: React.FC<Props> = ({ selectedCityId, selectedDate }) => {
   const { width: windowWidth } = useResize();
+  const {
+    products,
+    error: productsError,
+    isLoading: isProductsLoading,
+  } = useProducts(selectedCityId, selectedDate);
+
+  if (isProductsLoading) {
+    return <Spinner className="spinner" />;
+  }
+
+  if (productsError) {
+    return <p className="error-message">{productsError}</p>;
+  }
 
   if (!products || products.length === 0) {
     return (
@@ -31,7 +46,7 @@ const Products: React.FC<Props> = ({ products }) => {
   }
 
   return (
-    <section className="products">
+    <section className="products appear">
       {products.map(product => {
         const {
           id,

@@ -35,6 +35,7 @@ export const useProducts: UseProducts = (selectedCityId, selectedDate) => {
   }, [selectedDate, selectedCityId]);
 
   useEffect(() => {
+    setProducts(undefined);
     fetchProducts();
   }, [selectedCityId, selectedDate]);
 

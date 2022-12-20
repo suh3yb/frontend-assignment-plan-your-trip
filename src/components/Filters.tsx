@@ -57,7 +57,7 @@ const Filters: React.FC<Props> = ({ setSelectedCityId, setSelectedDate }) => {
   }
 
   return (
-    <div className="filters-wrapper">
+    <div className="filters-wrapper appear">
       <Filter
         label="Country"
         defaultOption="Choose the country"

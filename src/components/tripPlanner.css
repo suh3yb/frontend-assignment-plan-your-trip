@@ -1,5 +1,22 @@
+.spinner {
+  margin: auto;
+  padding: 60px;
+}
+
+.error-message {
+  margin: 24px;
+  text-align: center;
+  color: var(--text-important);
+}
+
 .page-separator {
   height: 1px;
   width: 100vw;
   background-color: var(--border-transparent);
+}
+
+@media (min-width: 768px) {
+  .error-message {
+    max-width: var(--max-width);
+  }
 }
