@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { getImgAltTextFromTitle } from '../utils/dataHelpers';
+import LazyImg from './LazyImg';
 import './productCard.css';
 
 interface Props {
@@ -19,7 +21,11 @@ const ProductCard: React.FC<Props> = ({
   discountPrice,
 }) => (
   <a className="product-card" href={productUrl} target="_blank">
-    <img className="product-card__image" src={image} alt="" />
+    <LazyImg
+      className="product-card__image"
+      src={image}
+      alt={getImgAltTextFromTitle(title)}
+    />
     <div className="product-card__info">
       <h2 className="product-card__info__title truncate">{title}</h2>
       <p className="product-card__info__summary truncate">{summary}</p>
