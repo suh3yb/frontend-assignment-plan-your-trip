@@ -7,7 +7,6 @@ interface Props {
   defaultOption: string;
   options?: string[];
   setValue: React.Dispatch<React.SetStateAction<string>>;
-  className?: string;
 }
 
 const Filter: React.FC<Props> = ({
@@ -15,7 +14,6 @@ const Filter: React.FC<Props> = ({
   defaultOption,
   options,
   setValue,
-  className,
 }) => {
   const handleChange = useCallback(
     (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -34,13 +32,10 @@ const Filter: React.FC<Props> = ({
     [options]
   );
 
-  const selectionElemClass = useMemo(() => {
-    let baseClass = addDisabledClass('filter', !options);
-    if (className) {
-      baseClass += ` ${className}`;
-    }
-    return baseClass;
-  }, [options, className]);
+  const selectionElemClass = useMemo(
+    () => addDisabledClass('filter', !options),
+    [options]
+  );
 
   const selectElemId = useMemo(
     () => `${label}-${defaultOption}`,

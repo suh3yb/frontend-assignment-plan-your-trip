@@ -1,6 +1,7 @@
 :root {
   --card-height: 120px;
   --card-shadow: 0 0 2px var(--shadow);
+  --card-shadow-hover: 0 0 6px var(--shadow);
 }
 
 .truncate {
@@ -15,16 +16,16 @@
   flex-direction: row;
   flex-wrap: nowrap;
   height: var(--card-height);
-  margin-bottom: 12px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
   border-radius: var(--border-radius);
   text-decoration: none;
   color: initial;
+  transition: box-shadow 0.1s ease-out;
 }
 
-.product-card:last-child {
-  margin-bottom: 0;
+.product-card:hover {
+  box-shadow: var(--card-shadow-hover);
 }
 
 .product-card__image {
@@ -35,6 +36,7 @@
 .product-card__info {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   padding: 12px;
 }
 
@@ -70,4 +72,16 @@
   font-size: 12px;
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .product-card__image {
+    width: 100%;
+    height: auto;
+  }
 }

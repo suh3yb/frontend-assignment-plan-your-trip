@@ -113,23 +113,20 @@ const TripPlanner: React.FC = () => {
 
   return (
     <>
-      <div className="selection-wrapper">
+      <div className="filters-wrapper">
         <Filter
-          className="selection-wrapper__filter"
           label="Country"
           defaultOption="Choose the country"
           options={Object.keys(locations)}
           setValue={setSelectedCountry}
         />
         <Filter
-          className="selection-wrapper__filter"
           label="City"
           defaultOption="Choose the city"
           options={cities && Object.keys(cities)}
           setValue={setSelectedCity}
         />
         <DatePicker
-          className="selection-wrapper__date-picker"
           disabled={!selectedCity}
           options={dates}
           setValue={setSelectedDate}

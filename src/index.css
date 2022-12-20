@@ -16,7 +16,7 @@
   --max-width: 640px;
 
   /* SPACING */
-  --padding-page-mobile: 16px;
+  --padding-page-mobile: 24px 16px;
 
   /* BORDER */
   --border-transparent: rgba(52, 52, 52, 0.1);

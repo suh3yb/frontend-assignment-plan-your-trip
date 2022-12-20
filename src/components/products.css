@@ -14,3 +14,30 @@
 .products {
   padding: var(--padding-page-mobile);
 }
+
+.products > .product-card {
+  margin-bottom: 12px;
+}
+
+.products > .product-card:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    row-gap: 12px;
+    column-gap: 12px;
+    width: var(--max-width);
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .products > .product-card {
+    margin: 0;
+  }
+}

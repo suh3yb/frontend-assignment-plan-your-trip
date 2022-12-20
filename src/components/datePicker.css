@@ -106,3 +106,13 @@
 .date-picker__fieldset__dates-wrapper__input {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .date-picker__fieldset__dates-wrapper {
+    width: var(--max-width);
+  }
+
+  .date-picker__fieldset__dates-wrapper__label {
+    width: calc(100% / 7 - 9px);
+  }
+}

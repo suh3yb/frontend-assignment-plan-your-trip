@@ -8,8 +8,8 @@
   margin: auto;
 }
 
-.selection-wrapper {
-  padding: 24px var(--padding-page-mobile);
+.filters-wrapper {
+  padding: var(--padding-page-mobile);
 }
 
 .page-separator {
@@ -23,15 +23,17 @@
     max-width: var(--max-width);
   }
 
-  .selection-wrapper {
+  .filters-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: var(--max-width);
+    width: var(--max-width);
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .selection-wrapper__filter {
+  .filters-wrapper > .filter {
     flex: 0 0 calc(50% - 12px);
   }
 }
