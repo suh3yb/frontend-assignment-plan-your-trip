@@ -1,5 +1,5 @@
 import React, { useCallback, useMemo } from 'react';
-import { addDisabledClass } from '../utils/classNameHelpers';
+import { addModifierToClass } from '../utils/classNameHelpers';
 import './filter.css';
 
 interface Props {
@@ -33,7 +33,7 @@ const Filter: React.FC<Props> = ({
   );
 
   const selectionElemClass = useMemo(
-    () => addDisabledClass('filter', !options),
+    () => addModifierToClass('filter', 'disabled', !options),
     [options]
   );
 

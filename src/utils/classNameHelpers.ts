@@ -1,22 +1,11 @@
-export const addDisabledClass = (
+export const addModifierToClass = (
   baseClassName: string,
-  isDisabled: boolean
+  modifier: string,
+  condition: boolean
 ): string => {
   let className = baseClassName;
-  if (isDisabled) {
-    className += ` ${className}--disabled`;
-  }
-
-  return className;
-};
-
-export const addAnimateClass = (
-  baseClassName: string,
-  shouldAnimate: boolean
-): string => {
-  let className = baseClassName;
-  if (shouldAnimate) {
-    className += ` ${className}--animated`;
+  if (condition) {
+    className += ` ${className}--${modifier}`;
   }
   return className;
 };

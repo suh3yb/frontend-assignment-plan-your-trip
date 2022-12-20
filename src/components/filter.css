@@ -41,3 +41,9 @@
 .filter__select:focus-visible {
   outline-color: var(--primary-bg-light);
 }
+
+@media (min-width: 768px) {
+  .filter__select {
+    background-position-x: 97%;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useCallback, useMemo } from 'react';
-import { addAnimateClass, addDisabledClass } from '../utils/classNameHelpers';
+import { addModifierToClass } from '../utils/classNameHelpers';
 import { getShortenedDayName } from '../utils/dateHelpers';
 import { DatesResponse } from '../types';
 import './datePicker.css';
@@ -18,12 +18,17 @@ const DatePicker: React.FC<Props> = ({ options, disabled, setValue }) => {
     [setValue]
   );
   const fieldsetElemClass = useMemo(
-    () => addDisabledClass('date-picker__fieldset', disabled),
+    () => addModifierToClass('date-picker__fieldset', 'disabled', disabled),
     [disabled]
   );
 
   const datesWrapperElemClass = useMemo(
-    () => addAnimateClass('date-picker__fieldset__dates-wrapper', !disabled),
+    () =>
+      addModifierToClass(
+        'date-picker__fieldset__dates-wrapper',
+        'animated',
+        !disabled
+      ),
     [disabled]
   );
 
