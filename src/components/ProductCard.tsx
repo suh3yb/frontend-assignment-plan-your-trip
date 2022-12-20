@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { getImgAltTextFromTitle } from '../utils/dataHelpers';
 import LazyImg from './LazyImg';
 import './productCard.css';

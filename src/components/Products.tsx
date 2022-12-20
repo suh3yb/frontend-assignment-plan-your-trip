@@ -1,8 +1,8 @@
 import React from 'react';
-import ProductCard from './ProductCard';
 import { ProductsResponse } from '../types';
 import { getDiscountedPrice } from '../utils/dataHelpers';
 import { useResize } from '../hooks/useResize';
+import ProductCard from './ProductCard';
 import './products.css';
 
 const DESKTOP_WIDTH = 768;

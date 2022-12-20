@@ -1,7 +1,8 @@
 import React, { useCallback, useMemo } from 'react';
+import { DatesResponse } from '../types';
 import { addModifierToClass } from '../utils/classNameHelpers';
 import { getShortenedDayName } from '../utils/dateHelpers';
-import { DatesResponse } from '../types';
+
 import './datePicker.css';
 
 interface Props {
