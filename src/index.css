@@ -8,9 +8,12 @@
   --text-important: #bb0e16;
   --shadow: #999999;
 
-  /* DIMENSIONS MOBILE */
+  /* DIMENSIONS */
   --header-height: 124px;
   --footer-height: 64px;
+
+  /* DIMENSIONS DESKTOP */
+  --max-width: 640px;
 
   /* SPACING */
   --padding-page-mobile: 16px;

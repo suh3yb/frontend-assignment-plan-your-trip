@@ -1,3 +1,18 @@
+@keyframes appear {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .header {
   height: var(--header-height);
   display: flex;
@@ -15,7 +30,13 @@
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
+  animation-name: appear;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
 .footer {
@@ -36,10 +57,4 @@
 
 .footer__text__copyright {
   font-size: 14px;
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 1280px) {
 }

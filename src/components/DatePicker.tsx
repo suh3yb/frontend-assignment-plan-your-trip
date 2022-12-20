@@ -8,19 +8,28 @@ interface Props {
   options: DatesResponse;
   disabled: boolean;
   setValue: React.Dispatch<React.SetStateAction<string>>;
+  className?: string;
 }
 
-const DatePicker: React.FC<Props> = ({ options, disabled, setValue }) => {
+const DatePicker: React.FC<Props> = ({
+  options,
+  disabled,
+  setValue,
+  className,
+}) => {
   const handleChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       setValue(event.target.value);
     },
     [setValue]
   );
-  const fieldsetElemClass = useMemo(
-    () => addDisabledClass('date-picker__fieldset', disabled),
-    [disabled]
-  );
+  const fieldsetElemClass = useMemo(() => {
+    let baseClass = addDisabledClass('date-picker__fieldset', disabled);
+    if (className) {
+      baseClass += ` ${className}`;
+    }
+    return baseClass;
+  }, [disabled, className]);
 
   const datesWrapperElemClass = useMemo(
     () => addAnimateClass('date-picker__fieldset__dates-wrapper', !disabled),

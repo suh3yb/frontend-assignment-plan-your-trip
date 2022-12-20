@@ -2,14 +2,14 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import { ProductsResponse } from '../types';
 import { getDiscountedPrice } from '../utils/dataHelpers';
-import './products.css';
 import { useResize } from '../hooks/useResize';
+import './products.css';
 
-const DESKTOP_WIDTH = 1024;
+const DESKTOP_WIDTH = 768;
 const MOBILE_IMG_ASPECT_RATIO = '3:4';
 const DESKTOP_IMG_ASPECT_RATIO = '3:2';
-const MOBILE_IMG_MAX_HEIGHT = '240';
-const DESKTOP_IMG_MAX_HEIGHT = '600';
+const MOBILE_IMG_MAX_HEIGHT = '240'; // 120px * 2 for retina
+const DESKTOP_IMG_MAX_HEIGHT = '400'; // 200px * 2 for retina
 
 interface Props {
   products?: ProductsResponse;
@@ -18,12 +18,16 @@ interface Props {
 const Products: React.FC<Props> = ({ products }) => {
   const { width: windowWidth } = useResize();
 
-  if (!products) {
-    return <p>Select filters first</p>;
-  }
-
-  if (products.length === 0) {
-    return <p>Nothing found, please try a different date</p>;
+  if (!products || products.length === 0) {
+    return (
+      <div className="info-wrapper">
+        <p className="info-wrapper__message">
+          {!products
+            ? 'Select filters first'
+            : 'Nothing found, please try a different date'}
+        </p>
+      </div>
+    );
   }
 
   return (

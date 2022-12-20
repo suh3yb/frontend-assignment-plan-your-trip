@@ -1,3 +1,16 @@
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: var(--padding-page-mobile);
+}
+
+.info-wrapper__message {
+  font-size: 12px;
+  text-align: center;
+}
+
 .products {
   padding: var(--padding-page-mobile);
 }
