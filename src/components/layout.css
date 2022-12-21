@@ -1,4 +1,4 @@
-@keyframes appear {
+@keyframes scaleup {
   0% {
     transform: scale(0.9);
     opacity: 0;
@@ -13,8 +13,29 @@
   }
 }
 
-.appear {
-  animation-name: appear;
+@keyframes appearfrombottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scale-up {
+  animation-name: scaleup;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.appear-from-bottom {
+  animation-name: appearfrombottom;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
 }

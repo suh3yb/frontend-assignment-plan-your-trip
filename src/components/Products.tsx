@@ -46,7 +46,7 @@ const Products: React.FC<Props> = ({ selectedCityId, selectedDate }) => {
   }
 
   return (
-    <section className="products appear">
+    <section className="products appear-from-bottom">
       {products.map(product => {
         const {
           id,

@@ -9,7 +9,7 @@ const Layout: React.FC = ({ children }) => {
       <header className="header">
         <h1 className="header__title">Plan your trip!</h1>
       </header>
-      <main className="main appear">{children}</main>
+      <main className="main scale-up">{children}</main>
       <footer className="footer">
         <p className="footer__text">
           <span className="footer__text__copyright">&copy;</span> 2014-
