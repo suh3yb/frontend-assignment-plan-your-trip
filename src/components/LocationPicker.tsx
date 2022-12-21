@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 import { addModifierToClass } from '../utils/classNameHelpers';
-import './Filter.css';
+import './LocationPicker.css';
 
 interface Props {
   label: string;
@@ -9,7 +9,7 @@ interface Props {
   setValue: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const Filter: React.FC<Props> = ({
+const LocationPicker: React.FC<Props> = ({
   label,
   defaultOption,
   options,
@@ -63,4 +63,4 @@ const Filter: React.FC<Props> = ({
   );
 };
 
-export default Filter;
+export default LocationPicker;

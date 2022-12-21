@@ -4,7 +4,7 @@ import { mapCityResponseToCitiesObj } from '../utils/dataHelpers';
 import { useDates } from '../hooks/useDates';
 import { useLocations } from '../hooks/useLocations';
 import DatePicker from './DatePicker';
-import Filter from './Filter';
+import LocationPicker from './LocationPicker';
 import { ReactComponent as Spinner } from '../assets/spinner.svg';
 import './Filters.css';
 
@@ -58,13 +58,13 @@ const Filters: React.FC<Props> = ({ setSelectedCityId, setSelectedDate }) => {
 
   return (
     <div className="filters-wrapper scale-up">
-      <Filter
+      <LocationPicker
         label="Country"
         defaultOption="Choose the country"
         options={locations && Object.keys(locations)}
         setValue={setSelectedCountry}
       />
-      <Filter
+      <LocationPicker
         label="City"
         defaultOption="Choose the city"
         options={cities && Object.keys(cities)}
