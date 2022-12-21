@@ -1,0 +1,19 @@
+.filters-wrapper {
+  padding: var(--padding-page-mobile);
+}
+
+@media (min-width: 768px) {
+  .filters-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: var(--max-width);
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .filters-wrapper > .filter {
+    flex: 0 0 calc(50% - 12px);
+  }
+}

@@ -1,0 +1,118 @@
+@keyframes slideleft {
+  80% {
+    transform: translateX(-40px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.date-picker__fieldset {
+  margin: 0;
+  margin-inline: 0;
+  border: none;
+  padding: 0;
+  padding-inline: 0;
+}
+
+.date-picker__fieldset--disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.date-picker__fieldset__legend {
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.date-picker__fieldset__dates-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  max-width: calc(100vw - 2 * var(--padding-page-mobile));
+  scroll-snap-type: x mandatory;
+
+  /* Hide scrollbar */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.date-picker__fieldset__dates-wrapper--animated > * {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-delay: 300ms;
+}
+
+/* Hide scrollbar */
+.date-picker__fieldset__dates-wrapper::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.date-picker__fieldset__dates-wrapper__separator {
+  display: inline-block;
+  width: 1px;
+  height: 40px;
+  /* negative margin to compensate extra width of separator */
+  margin: 0 -0.5px;
+  background-color: var(--border-dark);
+  flex-shrink: 0;
+}
+
+.date-picker__fieldset__dates-wrapper__label {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(25% - 8px);
+  margin: 0 4px;
+  border: 1px solid var(--border-dark);
+  border-radius: var(--border-radius);
+  padding: 12px 0;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  transition: background-color 0.1s ease-out, color 0.1s ease-out;
+  cursor: pointer;
+}
+
+.date-picker__fieldset__dates-wrapper__input:checked
+  + .date-picker__fieldset__dates-wrapper__label {
+  background-color: var(--primary-bg-light);
+  color: var(--text-light);
+}
+
+.date-picker__fieldset__dates-wrapper__label:first-of-type {
+  margin-left: 0;
+}
+
+.date-picker__fieldset__dates-wrapper__label:last-of-type {
+  margin-right: 0;
+}
+
+.date-picker__fieldset__dates-wrapper__label__day-name {
+  font-size: 12px;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.date-picker__fieldset__dates-wrapper__label__day-number {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.date-picker__fieldset__dates-wrapper__input {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .date-picker__fieldset__dates-wrapper {
+    width: var(--max-width);
+  }
+
+  .date-picker__fieldset__dates-wrapper__label {
+    width: calc(100% / 7 - 9px);
+  }
+}

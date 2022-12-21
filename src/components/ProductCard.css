@@ -1,0 +1,115 @@
+:root {
+  --card-height-mobile: 120px;
+  --card-width-desktop: calc((var(--max-width) - var(--grid-gap-desktop)) / 2);
+  --card-shadow: 0 0 2px var(--shadow);
+  --card-shadow-hover: 0 0 6px var(--shadow);
+  --img-aspect-ratio-mobile: 3 / 4;
+  --img-aspect-ratio-desktop: 3 / 2;
+  --placeholder-bg: #cccccc;
+}
+
+@keyframes hearthbeat {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: var(--card-height-mobile);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: initial;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.product-card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.product-card__image,
+.product-card__image__placeholder {
+  width: calc(var(--card-height-mobile) * var(--img-aspect-ratio-mobile));
+  height: var(--card-height-mobile);
+  flex-shrink: 0;
+}
+
+.product-card__image__placeholder {
+  background-color: var(--placeholder-bg);
+  animation-name: hearthbeat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.product-card__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 12px;
+}
+
+.product-card__info__title {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.product-card__info__summary {
+  margin-bottom: 8px;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.product-card__info__prices {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: auto;
+  font-size: 14px;
+}
+
+.product-card__info__prices__discount-price {
+  margin-right: 8px;
+  color: var(--text-important);
+}
+
+.product-card__info__prices__discount-price
+  + .product-card__info__prices__full-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .product-card__image,
+  .product-card__image__placeholder {
+    width: var(--card-width-desktop);
+    height: calc(var(--card-width-desktop) / (var(--img-aspect-ratio-desktop)));
+  }
+}
