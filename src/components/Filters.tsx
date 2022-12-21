@@ -6,7 +6,7 @@ import { useLocations } from '../hooks/useLocations';
 import DatePicker from './DatePicker';
 import Filter from './Filter';
 import { ReactComponent as Spinner } from '../assets/spinner.svg';
-import './filters.css';
+import './Filters.css';
 
 interface Props {
   setSelectedCityId: React.Dispatch<React.SetStateAction<string>>;

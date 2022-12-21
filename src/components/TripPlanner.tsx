@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Filters from './Filters';
 import Products from './Products';
-import './tripPlanner.css';
+import './TripPlanner.css';
 
 const TripPlanner: React.FC = () => {
   const [selectedCityId, setSelectedCityId] = useState<string>('');

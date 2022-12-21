@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 import { addModifierToClass } from '../utils/classNameHelpers';
-import './filter.css';
+import './Filter.css';
 
 interface Props {
   label: string;
@@ -49,11 +49,14 @@ const Filter: React.FC<Props> = ({
       </label>
       <select
         id={selectElemId}
+        data-testid={`select-${label}`}
         className="filter__select"
         defaultValue=""
         onChange={handleChange}
       >
-        <option value="">{defaultOption}</option>
+        <option data-testid="select-option" value="">
+          {defaultOption}
+        </option>
         {mapOptionsToOptionList()}
       </select>
     </div>

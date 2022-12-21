@@ -1,7 +1,7 @@
 import React from 'react';
 import { getImgAltTextFromTitle } from '../utils/dataHelpers';
 import LazyImg from './LazyImg';
-import './productCard.css';
+import './ProductCard.css';
 
 interface Props {
   productUrl: string;

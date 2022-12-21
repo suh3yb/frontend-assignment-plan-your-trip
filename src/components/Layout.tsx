@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import './layout.css';
+import './Layout.css';
 
 const Layout: React.FC = ({ children }) => {
   const currentYear = useMemo(() => new Date().getFullYear(), []);

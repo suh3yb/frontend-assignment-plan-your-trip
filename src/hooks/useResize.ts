@@ -32,6 +32,9 @@ export const useResize = () => {
     handleResize();
 
     return () => {
+      if (timeoutRef.current !== null) {
+        window.clearTimeout(timeoutRef.current);
+      }
       window.removeEventListener('resize', handleResize);
     };
   }, []);

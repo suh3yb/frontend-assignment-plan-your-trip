@@ -4,7 +4,7 @@ import { useProducts } from '../hooks/useProducts';
 import { getDiscountedPrice } from '../utils/dataHelpers';
 import ProductCard from './ProductCard';
 import { ReactComponent as Spinner } from '../assets/spinner.svg';
-import './products.css';
+import './Products.css';
 
 const DESKTOP_WIDTH = 768;
 const MOBILE_IMG_ASPECT_RATIO = '3:4';

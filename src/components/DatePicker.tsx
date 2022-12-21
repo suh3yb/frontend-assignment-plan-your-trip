@@ -3,7 +3,7 @@ import { DatesResponse } from '../types';
 import { addModifierToClass } from '../utils/classNameHelpers';
 import { getShortenedDayName } from '../utils/dateHelpers';
 
-import './datePicker.css';
+import './DatePicker.css';
 
 interface Props {
   options: DatesResponse;
