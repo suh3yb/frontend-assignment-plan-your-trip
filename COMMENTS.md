@@ -40,3 +40,4 @@ Figuring out how to implement tests for UI was also time consuming but I value t
 - Try to find a good scalable CSS method
 - Add helpful comments to code that is difficult to understand (better documentation)
 - Get reviews & feedback from others
+- Add a CMS instead of hardcoded copy
