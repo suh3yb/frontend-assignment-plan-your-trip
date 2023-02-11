@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import { useResize } from '../hooks/useResize';
 import { useProducts } from '../hooks/useProducts';
 import { getDiscountedPrice } from '../utils/dataHelpers';
@@ -24,10 +24,19 @@ const Products: React.FC<Props> = ({ selectedCityId, selectedDate }) => {
     error: productsError,
     isLoading: isProductsLoading,
   } = useProducts(selectedCityId, selectedDate);
+  const productsRef = useRef<HTMLElement>(null);
 
-  if (isProductsLoading) {
-    return <Spinner className="spinner" />;
-  }
+  useLayoutEffect(() => {
+    console.log('productsRef.current :>> ', productsRef.current);
+    if (productsRef.current === null) return;
+
+    const { height } = productsRef.current.getBoundingClientRect();
+    console.log('height :>> ', height);
+  }, [products]);
+
+  // if (isProductsLoading) {
+  //   return <Spinner className="spinner" />;
+  // }
 
   if (productsError) {
     return <p className="error-message">{productsError}</p>;
@@ -46,7 +55,7 @@ const Products: React.FC<Props> = ({ selectedCityId, selectedDate }) => {
   }
 
   return (
-    <section className="products appear-from-bottom">
+    <section ref={productsRef} className="products appear-from-bottom">
       {products.map(product => {
         const {
           id,
